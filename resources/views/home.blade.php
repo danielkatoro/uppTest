@@ -11,13 +11,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title> Bulkit :: Blockchain</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="icon" type="image/png" href="{{asset('img/favicon.png') }}" />
 
     <!--Core CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
     <link href="../api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link id="theme-sheet" rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link id="theme-sheet" rel="stylesheet" href="{{asset('css/core.css') }}">
 </head>
 
 <body class="is-theme-core">
@@ -30,7 +30,7 @@
                 <!-- Brand -->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="index.html">
-                        <img class="switcher-logo" src="assets/img/logos/logo/bulkit-core.svg" alt="">
+                        <img class="switcher-logo" src="{{ asset('img/logos/logo/bulkit-core.svg') }}" alt="">
                     </a>
 
                     <!-- Sidebar Trigger -->
