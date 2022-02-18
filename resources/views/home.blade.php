@@ -15,7 +15,7 @@
 
     <!--Core CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
-    <link href="../api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="{{ asset('api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet') }}" />
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link id="theme-sheet" rel="stylesheet" href="{{asset('css/core.css') }}">
 </head>
@@ -94,7 +94,7 @@
             </div>
         </nav>
         <!--Shape Layer-->
-        <img class="shape-layer" src="assets/img/graphics/shapes/blockchain-shape.svg" alt="" />
+        <img class="shape-layer" src="{{asset('img/graphics/shapes/blockchain-shape.svg') }}" alt="" />
 
         <!-- Hero image -->
         <div id="main-hero" class="hero-body">
@@ -124,7 +124,7 @@
                     <div class="column is-7">
                         <!-- Hero mockup -->
                         <figure class="image blob-figure">
-                            <img class="animated preFadeInUp fadeInUp" src="assets/img/graphics/compositions/blockchain-hero-1-core.png" data-base-url="assets/img/graphics/compositions/blockchain-hero-1" data-extension=".png" alt="" />
+                            <img class="animated preFadeInUp fadeInUp" src="{{asset('img/graphics/compositions/blockchain-hero-1-core.png')}}" data-base-url="{{asset('img/graphics/compositions/blockchain-hero-1') }}" data-extension=".png" alt="" />
                         </figure>
                     </div>
                 </div>
@@ -136,70 +136,70 @@
                 <div class="marquee crypto-marquee">
                     <div class="marquee-inner">
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/btc.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/btc.svg') }}" alt="" />
                             <div>
                                 <span>BTC $6,843.21</span>
                                 <span class="positive">+2.47%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/ltc.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/ltc.svg') }}" alt="" />
                             <div>
                                 <span>LTC $2,840.15</span>
                                 <span class="positive">+1.31%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/bao.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bao.svg') }}" alt="" />
                             <div>
                                 <span>BAO $832.18</span>
                                 <span class="positive">+8.1%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/flow.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/flow.svg') }}" alt="" />
                             <div>
                                 <span>FLOW $1187,26</span>
                                 <span class="negative">-3.65%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/husd.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/husd.svg') }}" alt="" />
                             <div>
                                 <span>HUSD $489.16</span>
                                 <span class="positive">+2.24%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/oxt.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/oxt.svg') }}" alt="" />
                             <div>
                                 <span>OXT $1,516.98</span>
                                 <span class="negative">-6.28%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/uos.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/uos.svg') }}" alt="" />
                             <div>
                                 <span>UOS $948.12</span>
                                 <span class="negative">-1.31%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/snt.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/snt.svg') }}" alt="" />
                             <div>
                                 <span>SNT $1,831.54</span>
                                 <span class="positive">+5.27%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/rlc.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/rlc.svg') }}" alt="" />
                             <div>
                                 <span>RLC $1,221.98</span>
                                 <span class="positive">+1.13%</span>
                             </div>
                         </div>
                         <div class="marquee-item">
-                            <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/bqx.svg" alt="" />
+                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bqx.svg') }}" alt="" />
                             <div>
                                 <span>BQX $3,879.32</span>
                                 <span class="positive">+3.22%</span>
@@ -279,19 +279,19 @@
                     <div class="tabs partner-tabs is-centered">
                         <ul>
                             <li>
-                                <a><img class="partner-logo" src="assets/img/logos/custom/covenant.svg" alt="" /></a>
+                                <a><img class="partner-logo" src="{{asset('img/logos/custom/covenant.svg') }}" alt="" /></a>
                             </li>
                             <li>
-                                <a><img class="partner-logo" src="assets/img/logos/custom/infinite.svg" alt="" /></a>
+                                <a><img class="partner-logo" src="{{asset('img/logos/custom/infinite.svg') }}" alt="" /></a>
                             </li>
                             <li>
-                                <a><img class="partner-logo" src="assets/img/logos/custom/phasekit.svg" alt="" /></a>
+                                <a><img class="partner-logo" src="{{asset('img/logos/custom/phasekit.svg') }}" alt="" /></a>
                             </li>
                             <li>
-                                <a><img class="partner-logo" src="assets/img/logos/custom/grubspot.svg" alt="" /></a>
+                                <a><img class="partner-logo" src="{{asset('img/logos/custom/grubspot.svg') }}" alt="" /></a>
                             </li>
                             <li>
-                                <a><img class="partner-logo" src="assets/img/logos/custom/gutwork.svg" alt="" /></a>
+                                <a><img class="partner-logo" src="{{asset('img/logos/custom/gutwork.svg') }}" alt="" /></a>
                             </li>
                         </ul>
                     </div>
@@ -313,9 +313,9 @@
                 <div class="column is-8 is-offset-2 is-relative is-centered-portrait">
                     <!-- 16by9 video -->
                     <div class="bulkit-player-container is-16by9 reversed-play">
-                        <video id="hero-player" class="bulkit-player" playsinline controls data-poster="https://via.placeholder.com/1200x675" data-demo-poster="assets/img/demo/video/poster-2f.jpg">
-                            <source src="assets/img/video/hands.mp4" type="video/mp4" />
-                            <source src="assets/img/video/hands.webm" type="video/webm" />
+                        <video id="hero-player" class="bulkit-player" playsinline controls data-poster="https://via.placeholder.com/1200x675" data-demo-poster="{{asset('img/demo/video/poster-2f.jpg') }}">
+                            <source src="{{asset('img/video/hands.mp4') }}" type="video/mp4" />
+                            <source src="{{asset('img/video/hands.webm') }}" type="video/webm" />
                         </video>
                     </div>
                 </div>
@@ -392,7 +392,7 @@
                         </div>
                     </div>
                     <div class="column is-7">
-                        <img class="featured-image-large" src="assets/img/graphics/compositions/crypto-feature-1-core.png" data-base-url="assets/img/graphics/compositions/crypto-feature-1" data-extension=".png" alt="" />
+                        <img class="featured-image-large" src="{{asset('img/graphics/compositions/crypto-feature-1-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-1') }}" data-extension=".png" alt="" />
                     </div>
                 </div>
 
@@ -417,7 +417,7 @@
                     </div>
                     <!-- /so the original floww is kept -->
                     <div class="column is-7">
-                        <img class="featured-image-large" src="assets/img/graphics/compositions/crypto-feature-3-core.png" data-base-url="assets/img/graphics/compositions/crypto-feature-3" data-extension=".png" alt="" />
+                        <img class="featured-image-large" src="{{asset('img/graphics/compositions/crypto-feature-3-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-3') }}" data-extension=".png" alt="" />
                     </div>
                     <!-- This column will display only on desktop and tablet landscape resolutions -->
                     <div class="column is-4 is-hidden-mobile">
@@ -459,7 +459,7 @@
                         </div>
                     </div>
                     <div class="column is-7">
-                        <img class="featured-image-large" src="assets/img/graphics/compositions/crypto-feature-4-core.png" data-base-url="assets/img/graphics/compositions/crypto-feature-4" data-extension=".png" alt="" />
+                        <img class="featured-image-large" src="{{asset('img/graphics/compositions/crypto-feature-4-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-4') }}" data-extension=".png" alt="" />
                     </div>
                 </div>
             </div>
@@ -485,7 +485,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-1-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-1" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-1-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-1') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -502,7 +502,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-2-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-2" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-2-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-2') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -519,7 +519,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-3-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-3" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-3-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-3') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -536,7 +536,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-4-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-4" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-4-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-4') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -553,7 +553,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-5-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-5" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-5-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-5') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -570,7 +570,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-6-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-6" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-6-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-6') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -587,7 +587,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-7-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-7" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-7-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-7') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -604,7 +604,7 @@
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="assets/img/graphics/icons/crypto-icon-8-core.svg" data-base-url="assets/img/graphics/icons/crypto-icon-8" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-8-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-8') }}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
@@ -643,7 +643,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/btc.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/btc.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">BTC</td>
                             <td data-th="Name" class="light-cell">Bitcoin</td>
@@ -665,7 +665,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/ltc.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/ltc.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">LTC</td>
                             <td data-th="Name" class="light-cell">Litecoin</td>
@@ -687,7 +687,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/bao.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bao.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">BAO</td>
                             <td data-th="Name" class="light-cell">Bao Finance</td>
@@ -709,7 +709,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/flow.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/flow.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">FLOW</td>
                             <td data-th="Name" class="light-cell">Flow</td>
@@ -731,7 +731,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/husd.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/husd.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">HUSD</td>
                             <td data-th="Name" class="light-cell">Husd</td>
@@ -753,7 +753,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/oxt.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/oxt.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">OXT</td>
                             <td data-th="Name" class="light-cell">Oxt</td>
@@ -775,7 +775,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/uos.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/uos.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">UOS</td>
                             <td data-th="Name" class="light-cell">Uos</td>
@@ -797,7 +797,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/snt.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/snt.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">SNT</td>
                             <td data-th="Name" class="light-cell">Snt</td>
@@ -819,7 +819,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/rlc.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/rlc.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">RLC</td>
                             <td data-th="Name" class="light-cell">Rlc</td>
@@ -841,7 +841,7 @@
                         </tr>
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="assets/img/graphics/icons/cryptocurrencies/bqx.svg" alt="" />
+                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bqx.svg') }}" alt="" />
                             </td>
                             <td data-th="Code">BQX</td>
                             <td data-th="Name" class="light-cell">Bqx</td>
@@ -884,7 +884,7 @@
             <!--Mockup-->
             <div class="mockup-wrap">
                 <div class="image-wrap">
-                    <img class="full-image-minimal" src="assets/img/graphics/compositions/crypto-feature-2-core.png" data-base-url="assets/img/graphics/compositions/crypto-feature-2" data-extension=".png" alt="" />
+                    <img class="full-image-minimal" src="{{asset('img/graphics/compositions/crypto-feature-2-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-2') }}" data-extension=".png" alt="" />
 
                     <div class="columns is-multiline app-features is-pulled">
                         <div class="column is-6">
@@ -1165,10 +1165,10 @@
     <!-- Carousel section -->
     <div class="section is-medium">
         <!-- Left rouned images -->
-        <img id="greg" class="testimonials-cover is-active" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="assets/img/demo/covers/greg-cover-core.png" data-base-url="assets/img/demo/covers/greg-cover" data-extension=".png" />
-        <img id="jane" class="testimonials-cover" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="assets/img/demo/covers/jane-cover-core.png" data-base-url="assets/img/demo/covers/jane-cover" data-extension=".png" />
-        <img id="andres" class="testimonials-cover" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="assets/img/demo/covers/andres-cover-core.png" data-base-url="assets/img/demo/covers/andres-cover" data-extension=".png" />
-        <img id="yuko" class="testimonials-cover" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="assets/img/demo/covers/yuko-cover-core.png" data-base-url="assets/img/demo/covers/yuko-cover" data-extension=".png" />
+        <img id="greg" class="testimonials-cover is-active" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="{{asset('img/demo/covers/greg-cover-core.png') }}" data-base-url="{{asset('img/demo/covers/greg-cover') }}" data-extension=".png" />
+        <img id="jane" class="testimonials-cover" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="{{asset('img/demo/covers/jane-cover-core.png') }}" data-base-url="{{asset('img/demo/covers/jane-cover') }}" data-extension=".png" />
+        <img id="andres" class="testimonials-cover" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="{{asset('img/demo/covers/andres-cover-core.png') }}" data-base-url="{{asset('img/demo/covers/andres-cover') }}" data-extension=".png" />
+        <img id="yuko" class="testimonials-cover" src="https://via.placeholder.com/1920x1277" alt="" data-demo-src="{{asset('img/demo/covers/yuko-cover-core.png') }}" data-base-url="{{asset('img/demo/covers/yuko-cover') }}" data-extension=".png" />
         <div class="container">
             <div class="columns">
                 <div class="column is-6 is-offset-3">
@@ -1190,7 +1190,7 @@
                       <img
                         src="https://via.placeholder.com/150x150"
                         alt=""
-                        data-demo-src="assets/img/demo/covers/greg.png"
+                        data-demo-src="{{asset('img/demo/covers/greg.png') }}"
                       />
                       Greg Norton
                     </span>
@@ -1205,7 +1205,7 @@
                       <img
                         src="https://via.placeholder.com/150x150"
                         alt=""
-                        data-demo-src="assets/img/demo/covers/jane.png"
+                        data-demo-src="{{asset('img/demo/covers/jane.png') }}"
                       />
                       Jane Mitchells
                     </span>
@@ -1221,7 +1221,7 @@
                       <img
                         src="https://via.placeholder.com/150x150"
                         alt=""
-                        data-demo-src="assets/img/demo/covers/andres.png"
+                        data-demo-src="{{asset('img/demo/covers/andres.png') }}"
                       />
                       Andres Fogossa
                     </span>
@@ -1237,7 +1237,7 @@
                       <img
                         src="https://via.placeholder.com/150x150"
                         alt=""
-                        data-demo-src="assets/img/demo/covers/yuko.png"
+                        data-demo-src="{{asset('img/demo/covers/yuko.png') }}"
                       />
                       Yuko Hattori
                     </span>
@@ -1371,7 +1371,7 @@
                 <!-- Column -->
                 <div class="column is-4">
                     <div class="pt-10 pb-10">
-                        <img class="small-footer-logo" src="assets/img/logos/bulkit-logo-g.png" alt="">
+                        <img class="small-footer-logo" src="{{asset('img/logos/bulkit-logo-g.png') }}" alt="">
                         <div class="footer-description">
                             Bulkit is built for developers and designers. It's modular approach lets you create an original
                             landing page for your brand.
@@ -1451,7 +1451,7 @@
         <div class="category-menu-wrapper">
             <!-- Menu -->
             <ul class="categories">
-                <li class="square-logo"><img src="assets/img/logos/square-white.svg" alt=""></li>
+                <li class="square-logo"><img src="{{asset('img/logos/square-white.svg') }}" alt=""></li>
                 <li class="category-link is-active" data-navigation-menu="demo-pages"><i class="sl sl-icon-layers"></i></li>
                 <li class="category-link" data-navigation-menu="onepagers"><i class="sl sl-icon-docs"></i></li>
                 <li class="category-link" data-navigation-menu="components"><i class="sl sl-icon-grid"></i></li>
@@ -1462,7 +1462,7 @@
                 <li>
                     <!-- Theme author -->
                     <a href="https://cssninja.io/" target="_blank">
-                        <img class="main-menu-author" src="assets/img/logos/cssninja.svg" alt="">
+                        <img class="main-menu-author" src="{{asset('img/logos/cssninja.svg') }}" alt="">
                     </a>
                 </li>
             </ul>
@@ -1912,10 +1912,10 @@
     <div id="chat-widget">
         <div class="chat-widget-body is-closed">
             <div class="chat-header">
-                <div class="close-chat is-hidden-desktop is-hidden-tablet"><img src="assets/img/graphics/legacy/close-small.svg" alt=""></div>
+                <div class="close-chat is-hidden-desktop is-hidden-tablet"><img src="{{asset('img/graphics/legacy/close-small.svg') }}" alt=""></div>
                 <div class="chat-team">
                     <div class="team-member has-text-centered">
-                        <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/alan.jpg">
+                        <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="{{asset('img/avatars/alan.jpg') }}">
                         <div class="is-handwritten">Alan maynard</div>
                     </div>
                 </div>
@@ -1930,7 +1930,7 @@
                     <span class="after-divider"></span>
                 </div>
                 <div class="chat-message from">
-                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/alan.jpg">
+                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="{{asset('img/avatars/alan.jpg') }}">
                     <div class="bubble-wrapper">
                         <div class="timestamp">02:49 pm</div>
                         <div class="chat-bubble">
@@ -1945,7 +1945,7 @@
                             Hello, someone out there ? I could use some help
                         </div>
                     </div>
-                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/helen.jpg">
+                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="{{asset('img/avatars/helen.jpg') }}">
                 </div>
             </div>
             <div class="message-input">
@@ -1958,9 +1958,9 @@
         </div>
     </div>
     <!-- /Chat widget -->
-    <script src="../api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/core.js"></script>
+    <script src="{{ asset('api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/core.js') }}"></script>
 </body>
 
 
