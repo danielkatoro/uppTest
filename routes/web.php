@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 
-Route::get('/@dmin', function () {
-    return view('admin.index');
+Route::name('home')->get('/@dmin', function () {
+    return view('admin.home');
 });
