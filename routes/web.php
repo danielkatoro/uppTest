@@ -21,5 +21,5 @@ Route::get('/', function () {
 });
 
 Route::name('home')->get('/@dmin', function () {
-    return view('admin.home');
-});
+    return view('auth.home');
+})->middleware('auth');
