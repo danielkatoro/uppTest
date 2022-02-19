@@ -8,13 +8,13 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>AtrioHR - HR and Company Management Admin Template</title>
     <!-- Favicon-->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{asset('admin/images/favicon.ico') }}" type="image/x-icon">
     <!-- Plugins Core Css -->
-    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="{{asset('admin/css/app.min.css') }}" rel="stylesheet">
     <!-- Custom Css -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="{{asset('admin/css/style.css') }}" rel="stylesheet" />
     <!-- You can choose a theme from css/styles instead of get all themes -->
-    <link href="assets/css/styles/all-themes.css" rel="stylesheet" />
+    <link href="{{asset('admin/css/styles/all-themes.css') }}" rel="stylesheet" />
 </head>
 
 <body class="light">
@@ -1582,14 +1582,14 @@
             </div>
         </div>
     </section>
-    <script src="assets/js/app.min.js"></script>
-    <script src="assets/js/chart.min.js"></script>
+    <script src="{{asset('admin/js/app.min.js') }}"></script>
+    <script src="{{asset('admin/js/chart.min.js') }}"></script>
     <!-- Custom Js -->
-    <script src="assets/js/admin.js"></script>
-    <script src="assets/js/bundles/echart/echarts.js"></script>
-    <script src="assets/js/bundles/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/js/pages/index.js"></script>
-    <script src="assets/js/pages/todo/todo.js"></script>
+    <script src="{{asset('admin/js/admin.js') }}"></script>
+    <script src="{{asset('admin/js/bundles/echart/echarts.js') }}"></script>
+    <script src="{{asset('admin/js/bundles/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="{{asset('admin/js/pages/index.js') }}"></script>
+    <script src="{{asset('admin/js/pages/todo/todo.js') }}"></script>
 </body>
 
 
