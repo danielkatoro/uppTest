@@ -300,7 +300,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/widgets/chart-widget.html">Chart Widget</a>
+                                <a href="{{ route('app_config') }}">Chart Widget</a>
                             </li>
                             <li>
                                 <a href="pages/widgets/data-widget.html">Data Widget</a>

@@ -23,3 +23,7 @@ Route::get('/', function () {
 Route::name('home')->get('/@dmin', function () {
     return view('auth.home');
 })->middleware('auth');
+
+Route::name('app_config')->get('/@dmin/app_config', function () {
+    return view('layouts.app_config');
+})->middleware('auth');
