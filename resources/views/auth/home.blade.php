@@ -595,7 +595,6 @@
         </div>
     </section>
     @endsection
-    @include('./layouts/_footer')
 </body>
 
 

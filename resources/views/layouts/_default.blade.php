@@ -246,202 +246,57 @@
                             <li class="active">
                                 <a href="index.html">Dashboard 1</a>
                             </li>
-                            <li>
-                                <a href="pages/dashboard/dashboard2.html">Dashboard 2</a>
-                            </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i data-feather="users"></i>
-                            <span>Employees</span>
+                            <span>Banners</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/employee/all-employees.html">All Employee</a>
+                                <a href="pages/employee/all-employees.html">Principal Banner</a>
                             </li>
                             <li>
-                                <a href="pages/employee/add-employee.html">Add Employee</a>
+                                <a href="pages/employee/add-employee.html">Crypto slide</a>
                             </li>
                             <li>
-                                <a href="pages/employee/edit-employee.html">Edit Employee</a>
+                                <a href="pages/employee/edit-employee.html">Buy and Sell Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Parteners Logo</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Download App Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Amazing Features Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Additional services Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Start tranding Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Get ready Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Frequently Questions Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Testimoniols Section</a>
+                            </li>
+                            <li>
+                                <a href="pages/employee/edit-employee.html">Last news Section</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="briefcase"></i>
-                            <span>Projects</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/projects/all-projects.html">All Projects</a>
-                            </li>
-                            <li>
-                                <a href="pages/projects/add-project.html">Add Project</a>
-                            </li>
-                            <li>
-                                <a href="pages/projects/edit-project.html">Edit Project</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="book-open"></i>
-                            <span>Attendance</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/attendance/today-attend.html">Today Attendance</a>
-                            </li>
-                            <li>
-                                <a href="pages/attendance/emp-attend.html">Employee Attendance</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="user"></i>
-                            <span>Clients</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/clients/all-clients.html">All Clients</a>
-                            </li>
-                            <li>
-                                <a href="pages/clients/add-client.html">Add Client</a>
-                            </li>
-                            <li>
-                                <a href="pages/clients/edit-client.html">Edit Client</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="clipboard"></i>
-                            <span>Leave Management</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/leave/all-leave.html">All Leave Request</a>
-                            </li>
-                            <li>
-                                <a href="pages/leave/leave-balance.html">Leave Balance</a>
-                            </li>
-                            <li>
-                                <a href="pages/leave/add-leave.html">New Leave Request</a>
-                            </li>
-                            <li>
-                                <a href="pages/leave/edit-leave.html">Edit Leave Request</a>
-                            </li>
-                            <li>
-                                <a href="pages/leave/leave-type.html">Leave Types</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="headphones"></i>
-                            <span>Holidays</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/holiday/all-holidays.html">All Holidays</a>
-                            </li>
-                            <li>
-                                <a href="pages/holiday/add-holiday.html">Add Holiday</a>
-                            </li>
-                            <li>
-                                <a href="pages/holiday/edit-holiday.html">Edit Holiday</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="book"></i>
-                            <span>Accounts</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/accounts/income.html">Income</a>
-                            </li>
-                            <li>
-                                <a href="pages/accounts/expense.html">Expenses</a>
-                            </li>
-                            <li>
-                                <a href="pages/accounts/invoice.html">Invoices</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="trello"></i>
-                            <span>Departments</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/departments/all-departments.html">All Departments</a>
-                            </li>
-                            <li>
-                                <a href="pages/departments/add-department.html">Add Department</a>
-                            </li>
-                            <li>
-                                <a href="pages/departments/edit-department.html">Edit Departments</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="dollar-sign"></i>
-                            <span>Payroll</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/payroll/payslip.html">Payslip</a>
-                            </li>
-                            <li>
-                                <a href="pages/payroll/employee-salary.html">Employee Salary</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="command"></i>
-                            <span>Job</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/job/add-job.html">Add Job</a>
-                            </li>
-                            <li>
-                                <a href="pages/job/requirement-list.html">Requirements</a>
-                            </li>
-                            <li>
-                                <a href="pages/job/applicant-list.html">Applicant List</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="package"></i>
-                            <span>Consultancy</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/consultancy/all-consultancy.html">All Consultancy</a>
-                            </li>
-                            <li>
-                                <a href="pages/consultancy/add-consultancy.html">Add Consultancy</a>
-                            </li>
-                            <li>
-                                <a href="pages/consultancy/edit-consultancy.html">Edit Consultancy</a>
-                            </li>
-                        </ul>
-                    </li>
+                    
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i data-feather="feather"></i>
-                            <span>Widgets</span>
+                            <span>Application Config</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
@@ -528,283 +383,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="layout"></i>
-                            <span>Forms</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/forms/basic-form-elements.html">Basic Form</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/advanced-form-elements.html">Advanced Form</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-examples.html">Form Examples</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-validation.html">Form Validation</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-wizard.html">Form Wizard</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/editors.html">Editors</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="grid"></i>
-                            <span>Tables</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/tables/normal-tables.html">Normal Tables</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/advance-tables.html">Advance Datatables</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/export-table.html">Export Table</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/child-row-table.html">Child Row Table</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/group-table.html">Grouping</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header">-- Apps</li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="mail"></i>
-                            <span>Email</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/email/inbox.html">Inbox</a>
-                            </li>
-                            <li>
-                                <a href="pages/email/compose.html">Compose</a>
-                            </li>
-                            <li>
-                                <a href="pages/email/view-mail.html">Read Email</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="pages/apps/chat.html">
-                            <i data-feather="message-circle"></i>
-                            <span>Chat</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/apps/calendar.html">
-                            <i data-feather="calendar"></i>
-                            <span>Calendar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/apps/task.html">
-                            <i data-feather="check-circle"></i>
-                            <span>Task Bar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/apps/portfolio.html">
-                            <i data-feather="wind"></i>
-                            <span>Portfolio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="server"></i>
-                            <span>Others</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/apps/dragdrop.html">Drag &amp; Drop</a>
-                            </li>
-                            <li>
-                                <a href="pages/apps/contact_list.html">Contact List</a>
-                            </li>
-                            <li>
-                                <a href="pages/apps/contact_grid.html">Contact Grid</a>
-                            </li>
-                            <li>
-                                <a href="pages/apps/support.html">Support</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="pie-chart"></i>
-                            <span>Charts</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/charts/amchart.html">amChart</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/echart.html">Echart</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/apexcharts.html">ApexCharts</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/morris.html">Morris</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/chartjs.html">ChartJS</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/sparkline.html">Sparkline</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/jquery-knob.html">Jquery Knob</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="map"></i>
-                            <span>Maps</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/maps/google.html">Google Map</a>
-                            </li>
-                            <li>
-                                <a href="pages/maps/jqvmap.html">Vector Map</a>
-                            </li>
-                            <li>
-                                <a href="pages/maps/datamap.html">Data Map</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header">-- Extra</li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="sliders"></i>
-                            <span>Timeline</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/timeline/horizontal-timeline.html">Horizontal</a>
-                            </li>
-                            <li>
-                                <a href="pages/timeline/vertical-timeline.html">Vertical</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="image"></i>
-                            <span>Medias</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/medias/image-gallery.html">Image Gallery</a>
-                            </li>
-                            <li>
-                                <a href="pages/medias/carousel.html">Carousel</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="user-check"></i>
-                            <span>Authentication</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/examples/login-register.html">Login &amp; Register</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/sign-in.html">Sign In</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/sign-up.html">Sign Up</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/forgot-password.html">Forgot Password</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/locked.html">Locked</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/404.html">404 - Not Found</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/500.html">500 - Server Error</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="anchor"></i>
-                            <span>Extra Pages</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/examples/profile.html">Profile</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/pricing.html">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/faqs.html">Faqs</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/blank.html">Blank Page</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="chevrons-down"></i>
-                            <span>Multi Level Menu</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="#" onClick="return false;">
-                                    <span>Menu Item</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" onClick="return false;">
-                                    <span>Menu Item - 2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" onClick="return false;" class="menu-toggle">
-                                    <span>Level - 2</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span>Menu Item</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;" class="menu-toggle">
-                                            <span>Level - 3</span>
-                                        </a>
-                                        <ul class="ml-menu">
-                                            <li>
-                                                <a href="#" onClick="return false;">
-                                                    <span>Level - 4</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
             </div>
             <!-- #Menu -->
@@ -989,3 +568,12 @@
         </aside>
         <!-- #END# Right Sidebar -->
     </div>
+    @yield('content')
+    <script src="{{asset('admin/js/app.min.js') }}"></script>
+    <script src="{{asset('admin/js/chart.min.js') }}"></script>
+    <!-- Custom Js -->
+    <script src="{{asset('admin/js/admin.js') }}"></script>
+    <script src="{{asset('admin/js/bundles/echart/echarts.js') }}"></script>
+    <script src="{{asset('admin/js/bundles/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="{{asset('admin/js/pages/index.js') }}"></script>
+    <script src="{{asset('admin/js/pages/todo/todo.js') }}"></script>
