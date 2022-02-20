@@ -56,8 +56,9 @@
                             <label for="name">Nom de l'application</label>
                             <input type="text" name="name" id="name" value="{{ $app_config->name }}">
                             <label for="description">Description</label>
-                            <input type="text" name="description" id="name" {{ $app_config->description }}>
+                            <input type="text" name="description" id="name" value="{{ $app_config->description }}">
                             <label for="image">Logo de l'application</label>
+                            <img src="{{asset('images')}}/{{ $app_config->logoimage }}" alt="">
                             <input type="file" name="file" id="image">
                             <input type="submit" value="Enregistrer les modifications">
                         </form>
