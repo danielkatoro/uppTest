@@ -52,38 +52,14 @@
                     <div class="body">
                         <form action="{{ route('Save_app_config')}}" method="POST" enctype="multipart/form-data">
                             @csrf
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <div class="input-field col s12">
-                                        <textarea name="name" id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-                                        <label for="textarea2">Nom de l'application</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="input-field col s12">
-                                        <textarea name="description" id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-                                        <label for="textarea2">Description</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h2 class="card-inside-title">Logo</h2>
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                        <div class="file-field input-field">
-                                            <div class="btn">
-                                                <span>File</span>
-                                                <input type="file">
-                                            </div>
-                                            <div class="file-path-wrapper">
-                                                <input name="file" class="file-path validate" type="text" onchange="previewfile(this)">
-                                            </div>
-                                        </div>
-                                        <img id="previewImg" alt="image logo" style="max-width: 130px;margin-top: 20px;">
-                                    
-                                </div>
-                                <button class="btn btn-primary waves-effect" type="submit">ENREGISTRER</button>
-                            </div>
+                            <input type="hidden" name="id" value="{{ $app_config->id }}">
+                            <label for="name">Nom de l'application</label>
+                            <input type="text" name="name" id="name" value="{{ $app_config->name }}">
+                            <label for="description">Description</label>
+                            <input type="text" name="description" id="name" {{ $app_config->description }}>
+                            <label for="image">Logo de l'application</label>
+                            <input type="file" name="file" id="image">
+                            <input type="submit" value="Enregistrer les modifications">
                         </form>
                     </div>
                 </div>

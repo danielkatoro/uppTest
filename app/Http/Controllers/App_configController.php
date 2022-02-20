@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 
 class App_configController extends Controller
 {
-    public function index(){
-        return view('layouts.app_config');
+    public function index($id){
+        $app_config = App_config::find($id);
+        return view('layouts.app_config',compact('app_config'));
     }
 
     public function storeApp_config(Request $request){
@@ -27,6 +28,7 @@ class App_configController extends Controller
     }
 
     public function editApp_config($id){
-        
+        $app_config = App_config::find($id);
+        return view('layouts.app_config', compact('app_config')); 
     }
 }
