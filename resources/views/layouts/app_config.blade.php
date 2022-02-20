@@ -54,14 +54,14 @@
                             <div class="row clearfix">
                             <div class="col-sm-6">
                                     <div class="input-field col s12">
-                                        <textarea id="textarea2" class="materialize-textarea"
+                                        <textarea name="name" id="textarea2" class="materialize-textarea"
                                             data-length="120"></textarea>
                                         <label for="textarea2">Nom de l'application</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="input-field col s12">
-                                        <textarea id="textarea2" class="materialize-textarea"
+                                        <textarea name="description" id="textarea2" class="materialize-textarea"
                                             data-length="120"></textarea>
                                         <label for="textarea2">Description</label>
                                     </div>
