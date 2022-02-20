@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title> Bulkit :: Blockchain</title>
-    <link rel="icon" type="image/png" href="{{asset('img/favicon.png') }}" />
+    <title>{{$app_config->name}}  :: Blockchain</title>
+    <link rel="icon" type="image/png" href="{{asset('images') }}/{{$app_config->logoimage}}" />
 
     <!--Core CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
                 <!-- Brand -->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="index.html">
-                        <img class="switcher-logo" src="{{ asset('img/logos/logo/bulkit-core.svg') }}" alt="">
+                        <img class="switcher-logo" src="{{ asset('images') }}/{{ $app_config->logoimage}}" alt="">
                     </a>
 
                     <!-- Sidebar Trigger -->
@@ -1371,10 +1371,9 @@
                 <!-- Column -->
                 <div class="column is-4">
                     <div class="pt-10 pb-10">
-                        <img class="small-footer-logo" src="{{asset('img/logos/bulkit-logo-g.png') }}" alt="">
+                        <img class="small-footer-logo" src="{{asset('images') }}/{{$app_config->logoimage}}" alt="">
                         <div class="footer-description">
-                            Bulkit is built for developers and designers. It's modular approach lets you create an original
-                            landing page for your brand.
+                            {{$app_config->description}}
                         </div>
                     </div>
                     <div>
@@ -1406,7 +1405,7 @@
                         <div class="column">
                             <ul class="footer-column">
                                 <li class="column-header">
-                                    Bulkit
+                                    {{$app_config->name}}
                                 </li>
                                 <li class="column-item"><a href="#">Home</a></li>
                                 <li class="column-item"><a href="#">Pricing</a></li>

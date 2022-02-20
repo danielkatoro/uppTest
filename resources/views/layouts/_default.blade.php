@@ -39,7 +39,7 @@
                     data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="#" onClick="return false;" class="bars"></a>
                 <a class="navbar-brand" href="index.html">
-                    <img src="{{asset('admin/images/logo.png') }}" alt="" />
+                    <img src="{{asset('images') }}/{{$app_config->logoimage}}" alt="" />
                     <span class="logo-name">AtrioHR</span>
                 </a>
             </div>

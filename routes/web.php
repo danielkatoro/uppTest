@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\App_configController;
+use App\Models\App_config;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\App_configController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +19,15 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', function () {
-    return view('index');
+    $id = 2;
+    $app_config = App_config::find($id);
+    return view('index',compact('app_config'));
 });
 
 Route::name('home')->get('/@dmin', function () {
-    return view('auth.home');
+    $id = 2;
+    $app_config = App_config::find($id);
+    return view('auth.home',compact('app_config'));
 })->middleware('auth');
 
 Route::name('app_config')->get('/@dmin/app_config', [App_configController::class, 'index'])->middleware('auth');
