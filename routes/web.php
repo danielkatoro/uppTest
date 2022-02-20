@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\App_configController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,6 @@ Route::name('home')->get('/@dmin', function () {
     return view('auth.home');
 })->middleware('auth');
 
-Route::name('app_config')->get('/@dmin/app_config', function () {
-    return view('layouts.app_config');
-})->middleware('auth');
+Route::name('app_config')->get('/@dmin/app_config', [App_configController::class, 'index'])->middleware('auth');
+
+Route::name('Save_app_config')->post('Save_app_config', [App_configController::class, 'storeApp_config'])->middleware('auth');
