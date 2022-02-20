@@ -28,7 +28,18 @@ class App_configController extends Controller
         return 'okey';
     }
 
-    public function UpdateApp_config($id){
-         
+    public function UpdateApp_config(Request $request){
+        $name = $request->name;
+        $description = $request->description;
+        $logoimage = $request->file('file');
+        $imageName = time().'.'.$logoimage->extension();
+        $logoimage->move(public_path('images'),$imageName);
+
+        $app_config = App_config::find($request->id);
+        $app_config->name = $name;
+        $app_config->description = $description;
+        $app_config->logoimage = $imageName;
+        $app_config->save();
+        return 'updateting okey';
     }
 }
