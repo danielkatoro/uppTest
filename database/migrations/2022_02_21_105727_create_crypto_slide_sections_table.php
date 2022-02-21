@@ -15,6 +15,10 @@ class CreateCryptoSlideSectionsTable extends Migration
     {
         Schema::create('crypto_slide_sections', function (Blueprint $table) {
             $table->id();
+            $table->string('logo');
+            $table->string('name');
+            $table->float('prix');
+            $table->float('pourcentage');
             $table->timestamps();
         });
     }

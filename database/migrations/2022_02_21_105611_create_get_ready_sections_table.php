@@ -15,6 +15,10 @@ class CreateGetReadySectionsTable extends Migration
     {
         Schema::create('get_ready_sections', function (Blueprint $table) {
             $table->id();
+            $table->string('image');
+            $table->string('icon');
+            $table->string('titre');
+            $table->string('text');
             $table->timestamps();
         });
     }

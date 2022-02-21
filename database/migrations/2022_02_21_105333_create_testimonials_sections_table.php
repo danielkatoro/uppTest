@@ -15,6 +15,10 @@ class CreateTestimonialsSectionsTable extends Migration
     {
         Schema::create('testimonials_sections', function (Blueprint $table) {
             $table->id();
+            $table->string('titre');
+            $table->string('detail');
+            $table->string('name');
+            $table->string('image');
             $table->timestamps();
         });
     }

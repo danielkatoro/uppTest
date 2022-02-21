@@ -15,6 +15,9 @@ class CreateBuyAndSellSectionsTable extends Migration
     {
         Schema::create('buy_and_sell_sections', function (Blueprint $table) {
             $table->id();
+            $table->string('icon');
+            $table->string('titre');
+            $table->string('text');
             $table->timestamps();
         });
     }

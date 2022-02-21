@@ -15,6 +15,9 @@ class CreatePrincipalBannersTable extends Migration
     {
         Schema::create('principal_banners', function (Blueprint $table) {
             $table->id();
+            $table->string('titre');
+            $table->string('text');
+            $table->string('image');
             $table->timestamps();
         });
     }

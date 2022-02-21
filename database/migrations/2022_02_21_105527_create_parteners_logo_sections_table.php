@@ -15,6 +15,8 @@ class CreatePartenersLogoSectionsTable extends Migration
     {
         Schema::create('parteners_logo_sections', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('logo');
             $table->timestamps();
         });
     }

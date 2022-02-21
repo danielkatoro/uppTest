@@ -15,6 +15,8 @@ class CreateFaqSectionsTable extends Migration
     {
         Schema::create('faq_sections', function (Blueprint $table) {
             $table->id();
+            $table->string('titre');
+            $table->string('details');
             $table->timestamps();
         });
     }

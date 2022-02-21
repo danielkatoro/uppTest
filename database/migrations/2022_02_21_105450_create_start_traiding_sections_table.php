@@ -15,6 +15,12 @@ class CreateStartTraidingSectionsTable extends Migration
     {
         Schema::create('start_traiding_sections', function (Blueprint $table) {
             $table->id();
+            $table->string('logo');
+            $table->string('code');
+            $table->string('name');
+            $table->string('status');
+            $table->float('price');
+            $table->float('evolution');
             $table->timestamps();
         });
     }
