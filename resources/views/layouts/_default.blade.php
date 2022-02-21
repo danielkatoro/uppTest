@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from www.radixtouch.com/templates/admin/atrio/source/lighthr/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jan 2022 12:34:57 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -35,8 +36,7 @@
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-bs-toggle="collapse"
-                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="#" onClick="return false;" class="bars"></a>
                 <a class="navbar-brand" href="index.html">
                     <img src="{{asset('images') }}/{{$app_config->logoimage}}" alt="" />
@@ -61,8 +61,7 @@
                     <!-- #END# Full Screen Button -->
                     <!-- #START# Notifications-->
                     <li class="dropdown">
-                        <a href="#" onClick="return false;" class="dropdown-toggle" data-bs-toggle="dropdown"
-                            role="button">
+                        <a href="#" onClick="return false;" class="dropdown-toggle" data-bs-toggle="dropdown" role="button">
                             <i class="far fa-bell"></i>
                             <span class="notify"></span>
                             <span class="heartbeat"></span>
@@ -200,9 +199,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" onClick="return false;">
+                                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             <i class="material-icons">power_settings_new</i>Logout
                                         </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                            @csrf
+                                        </form>
                                     </li>
                                 </ul>
                             </li>
@@ -292,7 +294,7 @@
                             </li>
                         </ul>
                     </li>
-                    
+
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i data-feather="feather"></i>
@@ -383,7 +385,7 @@
                             </li>
                         </ul>
                     </li>
-                    
+
                 </ul>
             </div>
             <!-- #Menu -->
@@ -406,28 +408,21 @@
                             <p>SIDEBAR COLOR</p>
                             <div class="selectgroup selectgroup-pills sidebar-color mt-3">
                                 <label class="selectgroup-item">
-                                    <input type="radio" name="icon-input" value="1"
-                                        class="btn-check selectgroup-input select-sidebar" checked>
-                                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                                        data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                                    <input type="radio" name="icon-input" value="1" class="btn-check selectgroup-input select-sidebar" checked>
+                                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
                                 </label>
                                 <label class="selectgroup-item">
-                                    <input type="radio" name="icon-input" value="2"
-                                        class="btn-check selectgroup-input select-sidebar">
-                                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                                        data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                                    <input type="radio" name="icon-input" value="2" class="btn-check selectgroup-input select-sidebar">
+                                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
                                 </label>
                             </div>
                         </div>
                         <div class="rightSetting">
                             <p>THEME COLORS</p>
-                            <div class="btn-group theme-color mt-3" role="group"
-                                aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" value="1" id="btnradio1"
-                                    autocomplete="off" checked>
+                            <div class="btn-group theme-color mt-3" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" value="1" id="btnradio1" autocomplete="off" checked>
                                 <label class="radio-toggle btn btn-outline-primary" for="btnradio1">Light</label>
-                                <input type="radio" class="btn-check" name="btnradio" value="2" id="btnradio2"
-                                    autocomplete="off">
+                                <input type="radio" class="btn-check" name="btnradio" value="2" id="btnradio2" autocomplete="off">
                                 <label class="radio-toggle btn btn-outline-primary " for="btnradio2">Dark</label>
                             </div>
                         </div>
@@ -470,8 +465,7 @@
                             <p>DISK SPACE</p>
                             <div class="sidebar-progress">
                                 <div class="progress m-t-20">
-                                    <div class="progress-bar l-bg-cyan shadow-style width-per-45" role="progressbar"
-                                        aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar l-bg-cyan shadow-style width-per-45" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span class="progress-description">
                                     <small>26% remaining</small>
@@ -482,8 +476,7 @@
                             <p>Server Load</p>
                             <div class="sidebar-progress">
                                 <div class="progress m-t-20">
-                                    <div class="progress-bar l-bg-orange shadow-style width-per-63" role="progressbar"
-                                        aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar l-bg-orange shadow-style width-per-63" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span class="progress-description">
                                     <small>Highly Loaded</small>
@@ -491,8 +484,7 @@
                             </div>
                         </div>
                         <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
-                            <button type="button"
-                                class="btn btn-outline-primary btn-border-radius btn-restore-theme">Restore
+                            <button type="button" class="btn btn-outline-primary btn-border-radius btn-restore-theme">Restore
                                 Default</button>
                         </div>
                     </div>
