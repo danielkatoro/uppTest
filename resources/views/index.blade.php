@@ -3,14 +3,16 @@
 
 
 <!-- Mirrored from bulkit.cssninja.io/kit17-landing.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 09:17:32 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>{{$app_config->name}}  :: Blockchain</title>
+    <title>{{$app_config->name}} :: Blockchain</title>
     <link rel="icon" type="image/png" href="{{asset('images') }}/{{$app_config->logoimage}}" />
 
     <!--Core CSS -->
@@ -36,13 +38,13 @@
                     <!-- Sidebar Trigger -->
                     <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
                         <span class="menu-toggle">
-                          <span class="icon-box-toggle">
-                              <span class="rotate">
-                                  <i class="icon-line-top"></i>
-                                  <i class="icon-line-center"></i>
-                                  <i class="icon-line-bottom"></i>
-                              </span>
-                        </span>
+                            <span class="icon-box-toggle">
+                                <span class="rotate">
+                                    <i class="icon-line-top"></i>
+                                    <i class="icon-line-center"></i>
+                                    <i class="icon-line-bottom"></i>
+                                </span>
+                            </span>
                         </span>
                     </a>
 
@@ -50,13 +52,13 @@
                     <div class="custom-burger" data-target="">
                         <a id="" class="responsive-btn" href="javascript:void(0);">
                             <span class="menu-toggle">
-                              <span class="icon-box-toggle">
-                                  <span class="rotate">
-                                      <i class="icon-line-top"></i>
-                                      <i class="icon-line-center"></i>
-                                      <i class="icon-line-bottom"></i>
-                                  </span>
-                            </span>
+                                <span class="icon-box-toggle">
+                                    <span class="rotate">
+                                        <i class="icon-line-top"></i>
+                                        <i class="icon-line-center"></i>
+                                        <i class="icon-line-bottom"></i>
+                                    </span>
+                                </span>
                             </span>
                         </a>
                     </div>
@@ -380,10 +382,9 @@
                             <div>Powerful Blockchain</div>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text"
-                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                periculis ut.</span>
+                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                            periculis ut.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -404,10 +405,9 @@
                             <h2>Crypto Mining</h2>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text"
-                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                periculis ut.</span>
+                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                            periculis ut.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -426,10 +426,9 @@
                             <h2>Crypto Mining</h2>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text"
-                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                periculis ut.</span>
+                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                            periculis ut.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -447,10 +446,9 @@
                             <h2>Crypto Trading</h2>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text"
-                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                periculis ut.</span>
+                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                            periculis ut.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -1175,24 +1173,20 @@
                     <div class="css-carousel">
                         <i class="fa fa-quote-left"></i>
                         <!-- Hidden inputs -->
+                        @foreach($testimonials as $item)
                         <input type="radio" name="slides" id="radio-1" checked data-testimonial-image="greg" />
-                        <input type="radio" name="slides" id="radio-2" data-testimonial-image="jane" />
-                        <input type="radio" name="slides" id="radio-3" data-testimonial-image="andres" />
-                        <input type="radio" name="slides" id="radio-4" data-testimonial-image="yuko" />
+                        @endforeach
                         <ul class="slides">
                             <!-- Carousel item -->
+                            
                             <li class="slide">
                                 <p>
                                     <q>It is a pleasure to use this service</q>
                                     <span class="text">An awesome platform to learn from</span>
                                     <span class="author">
-                      <img
-                        src="https://via.placeholder.com/150x150"
-                        alt=""
-                        data-demo-src="{{asset('img/demo/covers/greg.png') }}"
-                      />
-                      Greg Norton
-                    </span>
+                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/greg.png') }}" />
+                                        Greg Norton
+                                    </span>
                                 </p>
                             </li>
                             <!-- Carousel item -->
@@ -1201,45 +1195,31 @@
                                     <q>Awesome and available mentors</q>
                                     <span class="text">There is always somebody to help you.</span>
                                     <span class="author">
-                      <img
-                        src="https://via.placeholder.com/150x150"
-                        alt=""
-                        data-demo-src="{{asset('img/demo/covers/jane.png') }}"
-                      />
-                      Jane Mitchells
-                    </span>
+                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/jane.png') }}" />
+                                        Jane Mitchells
+                                    </span>
                                 </p>
                             </li>
                             <!-- Carousel item -->
                             <li class="slide">
                                 <p>
                                     <q>A cool place to learn cool things</q>
-                                    <span class="text"
-                      >Tons of quality design materials available.</span>
+                                    <span class="text">Tons of quality design materials available.</span>
                                     <span class="author">
-                      <img
-                        src="https://via.placeholder.com/150x150"
-                        alt=""
-                        data-demo-src="{{asset('img/demo/covers/andres.png') }}"
-                      />
-                      Andres Fogossa
-                    </span>
+                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/andres.png') }}" />
+                                        Andres Fogossa
+                                    </span>
                                 </p>
                             </li>
                             <!-- Carousel item -->
                             <li class="slide">
                                 <p>
                                     <q>From wannabe to professional</q>
-                                    <span class="text"
-                      >Great experience and awesome learning curve.</span>
+                                    <span class="text">Great experience and awesome learning curve.</span>
                                     <span class="author">
-                      <img
-                        src="https://via.placeholder.com/150x150"
-                        alt=""
-                        data-demo-src="{{asset('img/demo/covers/yuko.png') }}"
-                      />
-                      Yuko Hattori
-                    </span>
+                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/yuko.png') }}" />
+                                        Yuko Hattori
+                                    </span>
                                 </p>
                             </li>
                         </ul>
@@ -1480,7 +1460,7 @@
                                 <i class="icon-line-center"></i>
                                 <i class="icon-line-bottom"></i>
                             </span>
-                    </span>
+                        </span>
                     </span>
                 </a>
             </div>
@@ -1648,7 +1628,7 @@
                                 <i class="icon-line-center"></i>
                                 <i class="icon-line-bottom"></i>
                             </span>
-                    </span>
+                        </span>
                     </span>
                 </a>
             </div>
@@ -1751,7 +1731,7 @@
                                 <i class="icon-line-center"></i>
                                 <i class="icon-line-bottom"></i>
                             </span>
-                    </span>
+                        </span>
                     </span>
                 </a>
             </div>
@@ -1963,4 +1943,5 @@
 
 
 <!-- Mirrored from bulkit.cssninja.io/kit17-landing.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 09:45:30 GMT -->
+
 </html>
