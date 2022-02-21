@@ -102,11 +102,10 @@
                 <div class="columns is-vcentered">
                     <div class="column is-5 signup-column has-text-left">
                         <h1 class="title main-title dark-text text-bold is-2">
-                            Try Decentralized Exchange.
+                            {{ $principal_banner->titre}}
                         </h1>
                         <h2 class="subtitle is-5 no-margin-bottom body-color">
-                            Discover an all in one and fully hosted solution for your
-                            videoconference based business.
+                            {{ $principal_banner->text}}
                         </h2>
                         <br />
                         <!-- Signup form -->
@@ -124,7 +123,7 @@
                     <div class="column is-7">
                         <!-- Hero mockup -->
                         <figure class="image blob-figure">
-                            <img class="animated preFadeInUp fadeInUp" src="{{asset('img/graphics/compositions/blockchain-hero-1-core.png')}}" data-base-url="{{asset('img/graphics/compositions/blockchain-hero-1') }}" data-extension=".png" alt="" />
+                            <img class="animated preFadeInUp fadeInUp" src="{{asset('images')}}/{{$principal_banner->image}}" data-base-url="{{asset('img/graphics/compositions/blockchain-hero-1') }}" data-extension=".png" alt="" />
                         </figure>
                     </div>
                 </div>

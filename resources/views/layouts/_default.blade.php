@@ -271,7 +271,7 @@
                             <a href="{{ route('principal_banner')}}"><i data-feather="calendar"></i> <span>Principal Banner</a>
                         </li>
                         <li>
-                            <a href="pages/employee/add-employee.html"><i data-feather="calendar"></i> <span>Crypto slide</a>
+                            <a href="{{route('crypto_slide')}}"><i data-feather="calendar"></i> <span>Crypto slide</a>
                         </li>
                         <li>
                             <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Buy and Sell Section</a>
