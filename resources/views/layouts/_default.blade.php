@@ -298,7 +298,7 @@
                             <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Frequently Questions Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Testimoniols Section</a>
+                            <a href="{{route('testimonials_section')}}"><i data-feather="calendar"></i> <span>Testimoniols Section</a>
                         </li>
                         <li>
                             <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Last news Section</a>
@@ -573,6 +573,7 @@
     @yield('content')
     <script src="{{asset('admin/js/app.min.js') }}"></script>
     <script src="{{asset('admin/js/chart.min.js') }}"></script>
+    <script src="{{asset('admin/js/table.min.js') }}"></script>
     <!-- Custom Js -->
     <script src="{{asset('admin/js/admin.js') }}"></script>
     <script src="{{asset('admin/js/bundles/echart/echarts.js') }}"></script>

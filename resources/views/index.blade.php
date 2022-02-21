@@ -1173,9 +1173,10 @@
                     <div class="css-carousel">
                         <i class="fa fa-quote-left"></i>
                         <!-- Hidden inputs -->
-                        @foreach($testimonials as $item)
                         <input type="radio" name="slides" id="radio-1" checked data-testimonial-image="greg" />
-                        @endforeach
+                        <input type="radio" name="slides" id="radio-2" data-testimonial-image="jane" />
+                        <input type="radio" name="slides" id="radio-3" data-testimonial-image="andres" />
+                        <input type="radio" name="slides" id="radio-4" data-testimonial-image="yuko" />
                         <ul class="slides">
                             <!-- Carousel item -->
                             
