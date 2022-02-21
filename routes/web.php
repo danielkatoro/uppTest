@@ -3,6 +3,7 @@
 use App\Models\App_config;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\App_configController;
+use App\Http\Controllers\principal_baner_sectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,5 @@ Route::name('app_config')->get('/@dmin/app_config', [App_configController::class
 Route::name('Save_app_config')->post('Save_app_config', [App_configController::class, 'UpdateApp_config'])->middleware('auth');
 
 Route::name('edit_app_config')->get('/edit_app_config', [App_configController::class, 'index'])->middleware('auth');
+
+Route::name('principal_banner')->get('/@dmin/principal_banner', [principal_baner_sectionController::class, 'index'])->middleware('auth');

@@ -235,7 +235,7 @@
                         </div>
                         <div class="profile-usertitle">
                             <div class="sidebar-userpic-name"> {{ Auth::user()->name}} </div>
-                            <div class="profile-usertitle-job ">Manager </div>
+                            <div class="profile-usertitle-job ">Admin </div>
                         </div>
                     </li>
                     <li class="header">-- Main</li>
@@ -255,44 +255,54 @@
                             <i data-feather="users"></i>
                             <span>Banners</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/employee/all-employees.html">Principal Banner</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/add-employee.html">Crypto slide</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Buy and Sell Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Parteners Logo</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Download App Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Amazing Features Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Additional services Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Start tranding Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Get ready Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Frequently Questions Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Testimoniols Section</a>
-                            </li>
-                            <li>
-                                <a href="pages/employee/edit-employee.html">Last news Section</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="../apps/chat.html">
+                            <i data-feather="message-circle"></i>
+                            <span>Chat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../apps/calendar.html">
+                            <i data-feather="calendar"></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                        <li>
+                            <a href="{{ route('principal_banner')}}"><i data-feather="calendar"></i> <span>Principal Banner</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/add-employee.html"><i data-feather="calendar"></i> <span>Crypto slide</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Buy and Sell Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Parteners Logo</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Download App Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Amazing Features Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Additional services Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Start tranding Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Get ready Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Frequently Questions Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Testimoniols Section</a>
+                        </li>
+                        <li>
+                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Last news Section</a>
+                        </li>
                     </li>
 
                     <li>
