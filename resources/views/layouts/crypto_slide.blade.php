@@ -96,9 +96,9 @@
                             </ul>
                         </div>
                         <div class="body">
-                            @foreach($principal_banner as $item)
+                            @foreach($crypto_slide as $item)
                             <div class="row clearfix">
-                                <div class="col-sm-6">
+                                <!-- <div class="col-sm-6">
                                     <label for="">Titre principal</label><br>
                                     <h4>{{ $item->titre}}</h4>
                                     <label for="">Détails</label>
@@ -108,7 +108,7 @@
                                     <div class="form-group">
                                         <img src="{{asset('images')}}/{{$item->image}}" alt="">
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             @endforeach
                             

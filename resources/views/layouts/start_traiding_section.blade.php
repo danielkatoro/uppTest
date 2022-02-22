@@ -67,9 +67,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($testimonials as $item)
+                                        @foreach($start_training as $item)
                                         <tr class="odd gradeX">
-                                            <td class="table-img center">
+                                            <!-- <td class="table-img center">
                                                 <img src="{{asset('images')}}/{{$item->image}}" alt="">
                                             </td>
                                             <td class="center">{{$item->titre}}</td>
@@ -82,7 +82,7 @@
                                                 <a href="#" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
-                                            </td>
+                                            </td> -->
                                         </tr>
                                         @endforeach
                                         
