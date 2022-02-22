@@ -40,7 +40,7 @@
                 <a href="#" onClick="return false;" class="bars"></a>
                 <a class="navbar-brand" href="index.html">
                     <img src="{{asset('images') }}/{{$app_config->logoimage}}" alt="" />
-                    <span class="logo-name">AtrioHR</span>
+                    <span class="logo-name">{{$app_config->name}}</span>
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -238,33 +238,11 @@
                             <div class="profile-usertitle-job ">Admin </div>
                         </div>
                     </li>
-                    <li class="header">-- Main</li>
-                    <li class="active">
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="monitor"></i>
-                            <span>Dashboard</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li class="active">
-                                <a href="index.html">Dashboard 1</a>
-                            </li>
-                        </ul>
-                    </li>
+                   <hr>
                     <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="users"></i>
-                            <span>Banners</span>
-                        </a>
-                    <li>
-                        <a href="../apps/chat.html">
-                            <i data-feather="message-circle"></i>
-                            <span>Chat</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../apps/calendar.html">
+                        <a href="{{route('home')}}">
                             <i data-feather="calendar"></i>
-                            <span>Calendar</span>
+                            <span>Dashbord</span>
                         </a>
                     </li>
                         <li>
@@ -304,98 +282,13 @@
                             <a href="{{route('last_news')}}"><i data-feather="calendar"></i> <span>Last news Section</a>
                         </li>
                     </li>
-
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="feather"></i>
-                            <span>Application Config</span>
+                    li>
+                        <a href="{{route('app_config')}}">
+                            <i data-feather="calendar"></i>
+                            <span>Configuration</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="{{ route('app_config') }}">Chart Widget</a>
-                            </li>
-                            <li>
-                                <a href="pages/widgets/data-widget.html">Data Widget</a>
-                            </li>
-                        </ul>
                     </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="copy"></i>
-                            <span>User Interface (UI)</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/ui/alerts.html">Alerts</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/badges.html">Badges</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/modal.html">Modal</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/buttons.html">Buttons</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/collapse.html">Collapse</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/dialogs.html">Dialogs</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/cards.html">Cards</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/labels.html">Labels</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/list-group.html">List Group</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/notifications.html">Notifications</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/preloaders.html">Preloaders</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/progressbars.html">Progress Bars</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/range-sliders.html">Range Sliders</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/tabs.html">Tabs</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/typography.html">Typography</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/helper-classes.html">Helper Classes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="triangle"></i>
-                            <span>Icons</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/icons/material-icons.html">Material Icons</a>
-                            </li>
-                            <li>
-                                <a href="pages/icons/font-awesome.html">Font Awesome</a>
-                            </li>
-                            <li>
-                                <a href="pages/icons/simple-line-icons.html">Simple Line Icons</a>
-                            </li>
-                            <li>
-                                <a href="pages/icons/themify.html">Themify Icons</a>
-                            </li>
-                        </ul>
-                    </li>
-
+                    
                 </ul>
             </div>
             <!-- #Menu -->

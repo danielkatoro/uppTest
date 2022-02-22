@@ -1,22 +1,23 @@
 <?php
 
-use App\Http\Controllers\additiona_service_sectionController;
-use App\Http\Controllers\amazing_features_sectionController;
 use App\Models\App_config;
 use App\Models\principal_banner;
+use App\Models\crypto_slide_section;
 use App\Models\testimonials_section;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\App_configController;
-use App\Http\Controllers\buy_and_sell_sectionController;
-use App\Http\Controllers\crypto_slide_sectionController;
-use App\Http\Controllers\download_app_sectionController;
 use App\Http\Controllers\faq_sectionController;
 use App\Http\Controllers\get_ready_sectionController;
 use App\Http\Controllers\last_news_sectionController;
-use App\Http\Controllers\parteners_logo_sectionController;
+use App\Http\Controllers\buy_and_sell_sectionController;
+use App\Http\Controllers\crypto_slide_sectionController;
+use App\Http\Controllers\download_app_sectionController;
 use App\Http\Controllers\testimonials_sectionController;
-use App\Http\Controllers\principal_baner_sectionController;
+use App\Http\Controllers\parteners_logo_sectionController;
 use App\Http\Controllers\start_traiding_sectionController;
+use App\Http\Controllers\principal_baner_sectionController;
+use App\Http\Controllers\amazing_features_sectionController;
+use App\Http\Controllers\additiona_service_sectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,8 @@ Route::get('/', function () {
     $app_config = App_config::find($id);
     $id1=1;
     $principal_banner = principal_banner::find($id1);
-    return view('index',compact('app_config','principal_banner'));
+    $crypto_slide = crypto_slide_section::all();
+    return view('index',compact('app_config','principal_banner','crypto_slide'));
 });
 
 Route::name('home')->get('/@dmin', function () {

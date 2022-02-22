@@ -136,76 +136,16 @@
             <div class="marquee-container">
                 <div class="marquee crypto-marquee">
                     <div class="marquee-inner">
+                        @foreach($crypto_slide as $item)
                         <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/btc.svg') }}" alt="" />
+                            <img class="currency-icon" src="{{asset('images') }}/{{ $item->logo}}" alt="" />
                             <div>
-                                <span>BTC $6,843.21</span>
-                                <span class="positive">+2.47%</span>
+                                <span>{{$item->name}} ${{$item->prix}}</span>
+                                <span class="positive">+{{$item->pourcentage}}%</span>
                             </div>
                         </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/ltc.svg') }}" alt="" />
-                            <div>
-                                <span>LTC $2,840.15</span>
-                                <span class="positive">+1.31%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bao.svg') }}" alt="" />
-                            <div>
-                                <span>BAO $832.18</span>
-                                <span class="positive">+8.1%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/flow.svg') }}" alt="" />
-                            <div>
-                                <span>FLOW $1187,26</span>
-                                <span class="negative">-3.65%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/husd.svg') }}" alt="" />
-                            <div>
-                                <span>HUSD $489.16</span>
-                                <span class="positive">+2.24%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/oxt.svg') }}" alt="" />
-                            <div>
-                                <span>OXT $1,516.98</span>
-                                <span class="negative">-6.28%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/uos.svg') }}" alt="" />
-                            <div>
-                                <span>UOS $948.12</span>
-                                <span class="negative">-1.31%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/snt.svg') }}" alt="" />
-                            <div>
-                                <span>SNT $1,831.54</span>
-                                <span class="positive">+5.27%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/rlc.svg') }}" alt="" />
-                            <div>
-                                <span>RLC $1,221.98</span>
-                                <span class="positive">+1.13%</span>
-                            </div>
-                        </div>
-                        <div class="marquee-item">
-                            <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bqx.svg') }}" alt="" />
-                            <div>
-                                <span>BQX $3,879.32</span>
-                                <span class="positive">+3.22%</span>
-                            </div>
-                        </div>
+                        @endforeach
+                        
                     </div>
                 </div>
             </div>
