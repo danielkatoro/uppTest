@@ -196,6 +196,7 @@
     </div>
 
     <!--Video-->
+    @foreach($download_app as $item)
     <div class="section is-app-grey">
         <div class="container">
             <!-- Title -->
@@ -208,55 +209,52 @@
                 <div class="column is-8 is-offset-2 is-relative is-centered-portrait">
                     <!-- 16by9 video -->
                     <div class="bulkit-player-container is-16by9 reversed-play">
-                        <video id="hero-player" class="bulkit-player" playsinline controls data-poster="https://via.placeholder.com/1200x675" data-demo-poster="{{asset('img/demo/video/poster-2f.jpg') }}">
-                            <source src="{{asset('img/video/hands.mp4') }}" type="video/mp4" />
-                            <source src="{{asset('img/video/hands.webm') }}" type="video/webm" />
+                        <video id="hero-player" class="bulkit-player" playsinline controls data-poster="https://via.placeholder.com/1200x675" data-demo-poster="{{asset('images') }}/{{$item->video}}">
+                            <source src="{{asset('images') }}/{{$item->video}}" type="video/mp4" />
+                            <source src="{{asset('images') }}/{{$item->video}}" type="video/webm" />
                         </video>
                     </div>
                 </div>
 
                 <div class="column is-4 is-offset-2">
                     <div class="side-title mb-10">
-                        <h3 class="title is-5">Fast transactions</h3>
+                        <h3 class="title is-5">{{$item->titre1}}</h3>
                     </div>
                     <p class="side-paragraph is-size-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is
-                        enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.
+                        {{$item->text1}}
                     </p>
                 </div>
 
                 <div class="column is-4">
                     <div class="side-title mb-10">
-                        <h3 class="title is-5">Live compensation</h3>
+                        <h3 class="title is-5">{{$item->titre2}}</h3>
                     </div>
                     <p class="side-paragraph is-size-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is
-                        enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.
+                    {{$item->text2}}
                     </p>
                 </div>
 
                 <div class="column is-4 is-offset-2">
                     <div class="side-title mb-10">
-                        <h3 class="title is-5">Advanced Cryptography</h3>
+                        <h3 class="title is-5">{{$item->titre3}}</h3>
                     </div>
                     <p class="side-paragraph is-size-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is
-                        enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.
+                    {{$item->text3}}
                     </p>
                 </div>
 
                 <div class="column is-4">
                     <div class="side-title mb-10">
-                        <h3 class="title is-5">Daily Bonuses</h3>
+                        <h3 class="title is-5">{{$item->titre4}}</h3>
                     </div>
                     <p class="side-paragraph is-size-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eodem modo is
-                        enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.
+                    {{$item->text4}}
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    @endforeach
 
     <!-- Features section -->
     <div class="section">
@@ -266,19 +264,18 @@
                 <h2 class="section-title-landing">Amazing Features</h2>
                 <h4>Great tools that will make your life easier</h4>
             </div>
-
+            
+            @foreach($amazing_features as $item)
             <div class="content-wrapper">
                 <div class="columns is-vcentered pb-40 pt-40">
                     <div class="column is-4 is-offset-1">
                         <!-- Title -->
                         <div class="icon-subtitle"><i class="im im-icon-Structure"></i></div>
                         <div class="title quick-feature has-numbers text-bold">
-                            <div>Powerful Blockchain</div>
+                            <div>{{ $item->titre1 }}</div>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                            periculis ut.</span>
+                        <span class="body-text">{{ $item->text1 }}.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -286,22 +283,20 @@
                         </div>
                     </div>
                     <div class="column is-7">
-                        <img class="featured-image-large" src="{{asset('img/graphics/compositions/crypto-feature-1-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-1') }}" data-extension=".png" alt="" />
+                        <img class="featured-image-large" src="{{asset('images') }}/{{ $item->image1}}" data-base-url="{{asset('images') }}/{{ $item->image1}}" data-extension=".png" alt="" />
                     </div>
                 </div>
-
+                
                 <div class="columns is-vcentered pb-40 pt-40">
                     <!-- This column will display only on mobile -->
                     <div class="column is-4 is-offset-1 is-hidden-tablet is-hidden-desktop">
                         <!-- Title -->
                         <div class="icon-subtitle"><i class="im im-icon-Mine"></i></div>
                         <div class="title quick-feature has-numbers text-bold">
-                            <h2>Crypto Mining</h2>
+                            <h2>{{ $item->titre2 }}</h2>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                            periculis ut.</span>
+                        <span class="body-text">{{ $item->text2 }}</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -310,19 +305,17 @@
                     </div>
                     <!-- /so the original floww is kept -->
                     <div class="column is-7">
-                        <img class="featured-image-large" src="{{asset('img/graphics/compositions/crypto-feature-3-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-3') }}" data-extension=".png" alt="" />
+                        <img class="featured-image-large" src="{{asset('images') }}/{{ $item->image2}}" data-base-url="{{asset('images') }}/{{ $item->image2}}" data-extension=".png" alt="" />
                     </div>
                     <!-- This column will display only on desktop and tablet landscape resolutions -->
                     <div class="column is-4 is-hidden-mobile">
                         <!-- Title -->
                         <div class="icon-subtitle"><i class="im im-icon-Mine"></i></div>
                         <div class="title quick-feature has-numbers text-bold">
-                            <h2>Crypto Mining</h2>
+                            <h2>{{ $item->titre2}}</h2>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                            periculis ut.</span>
+                        <span class="body-text">{{ $item->text2}}</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -337,12 +330,10 @@
                         <!-- Title -->
                         <div class="icon-subtitle"><i class="im im-icon-Financial"></i></div>
                         <div class="title quick-feature has-numbers text-bold">
-                            <h2>Crypto Trading</h2>
+                            <h2>{{ $item->titre3}}</h2>
                         </div>
                         <div class="title-divider is-small"></div>
-                        <span class="body-text">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
-                            inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
-                            periculis ut.</span>
+                        <span class="body-text">{{ $item->text3}}</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
                                 Learn more <i class="sl sl-icon-arrow-right"></i>
@@ -350,10 +341,12 @@
                         </div>
                     </div>
                     <div class="column is-7">
-                        <img class="featured-image-large" src="{{asset('img/graphics/compositions/crypto-feature-4-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-4') }}" data-extension=".png" alt="" />
+                        <img class="featured-image-large" src="{{asset('images') }}/{{ $item->image3}}" data-base-url="{{asset('images') }}/{{ $item->image3}}" data-extension=".png" alt="" />
                     </div>
                 </div>
             </div>
+            @endforeach
+
         </div>
     </div>
 
