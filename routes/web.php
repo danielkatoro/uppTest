@@ -1,13 +1,22 @@
 <?php
 
+use App\Http\Controllers\additiona_service_sectionController;
+use App\Http\Controllers\amazing_features_sectionController;
 use App\Models\App_config;
 use App\Models\principal_banner;
 use App\Models\testimonials_section;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\App_configController;
+use App\Http\Controllers\buy_and_sell_sectionController;
 use App\Http\Controllers\crypto_slide_sectionController;
+use App\Http\Controllers\download_app_sectionController;
+use App\Http\Controllers\faq_sectionController;
+use App\Http\Controllers\get_ready_sectionController;
+use App\Http\Controllers\last_news_sectionController;
+use App\Http\Controllers\parteners_logo_sectionController;
 use App\Http\Controllers\testimonials_sectionController;
 use App\Http\Controllers\principal_baner_sectionController;
+use App\Http\Controllers\start_traiding_sectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,7 +57,26 @@ Route::name('principal_banner')->get('/@dmin/principal_banner', [principal_baner
 
 Route::name('testimonials_section')->get('/@dmin/testimonials_section', [testimonials_sectionController::class, 'index'])->middleware('auth');
 
+Route::name('start_traiding')->get('/@dmin/start_traiding', [start_traiding_sectionController::class, 'index'])->middleware('auth');
 
+Route::name('parteners_logo')->get('/@dmin/parteners_logo', [parteners_logo_sectionController::class, 'index'])->middleware('auth');
 
+Route::name('last_news')->get('/@dmin/last_news', [last_news_sectionController::class, 'index'])->middleware('auth');
+
+Route::name('get_ready')->get('/@dmin/get_ready', [get_ready_sectionController::class, 'index'])->middleware('auth');
+
+Route::name('faq')->get('/@dmin/faq', [faq_sectionController::class, 'index'])->middleware('auth');
+
+Route::name('download_app')->get('/@dmin/download_app', [download_app_sectionController::class, 'index'])->middleware('auth');
 
 Route::name('crypto_slide')->get('/@dmin/crypto_slide', [crypto_slide_sectionController::class, 'index'])->middleware('auth');
+
+Route::name('buy_and_sell')->get('/@dmin/buy_and_sell', [buy_and_sell_sectionController::class, 'index'])->middleware('auth');
+
+Route::name('amazing_features')->get('/@dmin/amazing_features', [amazing_features_sectionController::class, 'index'])->middleware('auth');
+
+Route::name('additional_services')->get('/@dmin/additional_services', [additiona_service_sectionController::class, 'index'])->middleware('auth');
+
+
+
+

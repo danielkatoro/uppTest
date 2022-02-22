@@ -274,34 +274,34 @@
                             <a href="{{route('crypto_slide')}}"><i data-feather="calendar"></i> <span>Crypto slide</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Buy and Sell Section</a>
+                            <a href="{{route('buy_and_sell')}}"><i data-feather="calendar"></i> <span>Buy and Sell Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Parteners Logo</a>
+                            <a href="{{route('parteners_logo')}}"><i data-feather="calendar"></i> <span>Parteners Logo</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Download App Section</a>
+                            <a href="{{route('download_app')}}"><i data-feather="calendar"></i> <span>Download App Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Amazing Features Section</a>
+                            <a href="{{route('amazing_features')}}"><i data-feather="calendar"></i> <span>Amazing Features Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Additional services Section</a>
+                            <a href="{{route('additional_services')}}"><i data-feather="calendar"></i> <span>Additional services Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Start tranding Section</a>
+                            <a href="{{route('start_traiding')}}"><i data-feather="calendar"></i> <span>Start tranding Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Get ready Section</a>
+                            <a href="{{route('get_ready')}}"><i data-feather="calendar"></i> <span>Get ready Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Frequently Questions Section</a>
+                            <a href="{{route('faq')}}"><i data-feather="calendar"></i> <span>Frequently Questions Section</a>
                         </li>
                         <li>
                             <a href="{{route('testimonials_section')}}"><i data-feather="calendar"></i> <span>Testimoniols Section</a>
                         </li>
                         <li>
-                            <a href="pages/employee/edit-employee.html"><i data-feather="calendar"></i> <span>Last news Section</a>
+                            <a href="{{route('last_news')}}"><i data-feather="calendar"></i> <span>Last news Section</a>
                         </li>
                     </li>
 

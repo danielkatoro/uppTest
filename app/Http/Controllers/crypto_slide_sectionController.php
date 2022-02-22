@@ -11,6 +11,6 @@ class crypto_slide_sectionController extends Controller
     public function index(){
         $app_config = App_config::find(2);
         $crypto_slide = crypto_slide_section::all();
-        return view('layouts.principal_banner',compact('principal_banner','app_config'));
+        return view('layouts.crypto_slide',compact('crypto_slide','app_config'));
     }
 }
