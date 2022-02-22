@@ -1,14 +1,18 @@
 <?php
 
 use App\Models\App_config;
+use App\Models\faq_section;
 use App\Models\principal_banner;
+use App\Models\last_news_section;
 use App\Models\buy_and_sell_section;
 use App\Models\crypto_slide_section;
 use App\Models\download_app_section;
 use App\Models\testimonials_section;
 use Illuminate\Support\Facades\Route;
 use App\Models\parteners_logo_section;
+use App\Models\start_traiding_section;
 use App\Models\amazing_features_section;
+use App\Models\additional_service_section;
 use App\Http\Controllers\App_configController;
 use App\Http\Controllers\faq_sectionController;
 use App\Http\Controllers\get_ready_sectionController;
@@ -47,8 +51,14 @@ Route::get('/', function () {
     $parteners_logo = parteners_logo_section::all();
     $download_app = download_app_section::all();
     $amazing_features = amazing_features_section::all();
+    $additional_service = additional_service_section::all();
+    $start_training = start_traiding_section::all();
+    $faq1 = faq_section::select("SELECT * FROM faq_sections DESC LIMIT 5");
+    $faq2 = faq_section::select("SELECT * FROM faq_sections LIMIT 5");
+    $testimonials = testimonials_section::all();
+    $last_news = last_news_section::all();
 
-    return view('index',compact('app_config','principal_banner','crypto_slide','buy_and_sell','parteners_logo','download_app','amazing_features'));
+    return view('index',compact('app_config','principal_banner','crypto_slide','buy_and_sell','parteners_logo','download_app','amazing_features','additional_service','start_training','faq1','faq2','testimonials','last_news'));
 });
 
 Route::name('home')->get('/@dmin', function () {

@@ -56,22 +56,20 @@
                                 <table class="table table-hover js-basic-example contact_list">
                                     <thead>
                                         <tr>
-                                            <th class="center">#</th>
+                                            <th class="center"> Icon </th>
                                             <th class="center"> Titre </th>
-                                            <th class="center"> Details </th>
-                                            <th class="center"> Nom </th>
+                                            <th class="center"> Text </th>
                                             <th class="center"> Action </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach($buy_and_sell as $item)
                                         <tr class="odd gradeX">
-                                            <!-- <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->image}}" alt="">
+                                            <td class="table-img center">
+                                                <img src="{{asset('images')}}/{{$item->icon}}" alt="">
                                             </td>
                                             <td class="center">{{$item->titre}}</td>
-                                            <td class="center">{{$item->detail}}</td>
-                                            <td class="center">{{$item->name}}</td>
+                                            <td class="center">{{$item->text}}</td>
                                             <td class="center">
                                                 <a href="edit-employee.html" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
@@ -79,17 +77,16 @@
                                                 <a href="#" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
-                                            </td> -->
+                                            </td>
                                         </tr>
                                         @endforeach
                                         
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                        <th class="center">#</th>
+                                            <th class="center"> Icon </th>
                                             <th class="center"> Titre </th>
-                                            <th class="center"> Details </th>
-                                            <th class="center"> Nom </th>
+                                            <th class="center"> Text </th>
                                             <th class="center"> Action </th>
                                         </tr>
                                     </tfoot>

@@ -365,141 +365,24 @@
             pb-60
           ">
                 <!-- Benefit box -->
+                @foreach($additional_service as $item)
                 <div class="column is-3">
                     <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
                         <!-- Icon -->
                         <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-1-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-1') }}" data-extension=".svg" alt="" />
+                            <img class="full-icon" src="{{asset('images') }}/{{ $item->image}}" data-base-url="{{asset('images') }}/{{ $item->image}}" data-extension=".svg" alt="" />
                         </div>
                         <!-- Content -->
                         <div class="content-container has-text-centered">
-                            <h3>Live Exchange</h3>
+                            <h3>{{$item->titre}}</h3>
                             <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
+                                {{$item->text}}
                             </p>
                         </div>
                     </a>
                 </div>
-                <!-- Benefit box -->
-                <div class="column is-3">
-                    <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
-                        <!-- Icon -->
-                        <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-2-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-2') }}" data-extension=".svg" alt="" />
-                        </div>
-                        <!-- Content -->
-                        <div class="content-container has-text-centered">
-                            <h3>Individual Mining</h3>
-                            <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Benefit box -->
-                <div class="column is-3">
-                    <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
-                        <!-- Icon -->
-                        <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-3-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-3') }}" data-extension=".svg" alt="" />
-                        </div>
-                        <!-- Content -->
-                        <div class="content-container has-text-centered">
-                            <h3>Delegate Mining</h3>
-                            <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Benefit box -->
-                <div class="column is-3">
-                    <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
-                        <!-- Icon -->
-                        <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-4-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-4') }}" data-extension=".svg" alt="" />
-                        </div>
-                        <!-- Content -->
-                        <div class="content-container has-text-centered">
-                            <h3>Financial Advice</h3>
-                            <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Benefit box -->
-                <div class="column is-3">
-                    <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
-                        <!-- Icon -->
-                        <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-5-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-5') }}" data-extension=".svg" alt="" />
-                        </div>
-                        <!-- Content -->
-                        <div class="content-container has-text-centered">
-                            <h3>App Platform</h3>
-                            <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Benefit box -->
-                <div class="column is-3">
-                    <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
-                        <!-- Icon -->
-                        <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-6-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-6') }}" data-extension=".svg" alt="" />
-                        </div>
-                        <!-- Content -->
-                        <div class="content-container has-text-centered">
-                            <h3>Advanced Cryptography</h3>
-                            <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Benefit box -->
-                <div class="column is-3">
-                    <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
-                        <!-- Icon -->
-                        <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-7-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-7') }}" data-extension=".svg" alt="" />
-                        </div>
-                        <!-- Content -->
-                        <div class="content-container has-text-centered">
-                            <h3>Consolidation</h3>
-                            <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Benefit box -->
-                <div class="column is-3">
-                    <a class="flex-card is-feature is-link padding-30 no-margin-bottom">
-                        <!-- Icon -->
-                        <div class="image-container is-first is-icon-reveal">
-                            <img class="full-icon" src="{{asset('img/graphics/icons/crypto-icon-8-core.svg') }}" data-base-url="{{asset('img/graphics/icons/crypto-icon-8') }}" data-extension=".svg" alt="" />
-                        </div>
-                        <!-- Content -->
-                        <div class="content-container has-text-centered">
-                            <h3>Investment</h3>
-                            <p>
-                                Duplexque isdem diebus acciderat malum, quod et Theophilum
-                                insontem atrox interceperat.
-                            </p>
-                        </div>
-                    </a>
-                </div>
+                @endforeach
+                
             </div>
         </div>
     </div>
@@ -525,19 +408,20 @@
                             <th>Evolution</th>
                             <th class="has-text-right">Buy</th>
                         </tr>
+                        @foreach($start_training as $item)
                         <tr>
                             <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/btc.svg') }}" alt="" />
+                                <img class="currency-icon" src="{{asset('images') }}/{{$item->logo}}" alt="" />
                             </td>
-                            <td data-th="Code">BTC</td>
-                            <td data-th="Name" class="light-cell">Bitcoin</td>
+                            <td data-th="Code">{{$item->code}}</td>
+                            <td data-th="Name" class="light-cell">{{$item->name}}</td>
                             <td data-th="Status">
-                                <span class="tag is-rounded">Trending</span>
+                                <span class="tag is-rounded">{{$item->status}}</span>
                             </td>
-                            <td data-th="Price">$6,840.658</td>
+                            <td data-th="Price">${{$item->price}}</td>
                             <td data-th="Evolution">
                                 <div class="evolution is-positive">
-                                    <span>+ 2.4%</span>
+                                    <span>{{$item->evolution}}%</span>
                                     <i data-feather="trending-up"></i>
                                 </div>
                             </td>
@@ -547,204 +431,8 @@
                                 </button>
                             </td>
                         </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/ltc.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">LTC</td>
-                            <td data-th="Name" class="light-cell">Litecoin</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Stable</span>
-                            </td>
-                            <td data-th="Price">$2,840.154</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-positive">
-                                    <span>+ 1.3%</span>
-                                    <i data-feather="trending-up"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bao.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">BAO</td>
-                            <td data-th="Name" class="light-cell">Bao Finance</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Trending</span>
-                            </td>
-                            <td data-th="Price">$832.189</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-positive">
-                                    <span>+ 8.1%</span>
-                                    <i data-feather="trending-up"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/flow.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">FLOW</td>
-                            <td data-th="Name" class="light-cell">Flow</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Downing</span>
-                            </td>
-                            <td data-th="Price">$1187,26</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-negative">
-                                    <span>-3.6%</span>
-                                    <i data-feather="trending-down"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/husd.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">HUSD</td>
-                            <td data-th="Name" class="light-cell">Husd</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Trending</span>
-                            </td>
-                            <td data-th="Price">$489.165</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-positive">
-                                    <span>+ 2.1%</span>
-                                    <i data-feather="trending-up"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/oxt.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">OXT</td>
-                            <td data-th="Name" class="light-cell">Oxt</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Downing</span>
-                            </td>
-                            <td data-th="Price">$1,516.98</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-negative">
-                                    <span>- 6.2%</span>
-                                    <i data-feather="trending-down"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/uos.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">UOS</td>
-                            <td data-th="Name" class="light-cell">Uos</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Downing</span>
-                            </td>
-                            <td data-th="Price">$948.127</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-negative">
-                                    <span>- 1.3%</span>
-                                    <i data-feather="trending-down"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/snt.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">SNT</td>
-                            <td data-th="Name" class="light-cell">Snt</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Trending</span>
-                            </td>
-                            <td data-th="Price">$1,831.549</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-positive">
-                                    <span>+ 5.2%</span>
-                                    <i data-feather="trending-up"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/rlc.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">RLC</td>
-                            <td data-th="Name" class="light-cell">Rlc</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Trending</span>
-                            </td>
-                            <td data-th="Price">$1,221.987</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-positive">
-                                    <span>+ 1.1%</span>
-                                    <i data-feather="trending-up"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Logo">
-                                <img class="currency-icon" src="{{asset('img/graphics/icons/cryptocurrencies/bqx.svg') }}" alt="" />
-                            </td>
-                            <td data-th="Code">BQX</td>
-                            <td data-th="Name" class="light-cell">Bqx</td>
-                            <td data-th="Status">
-                                <span class="tag is-rounded">Trending</span>
-                            </td>
-                            <td data-th="Price">$3,879.32</td>
-                            <td data-th="Evolution">
-                                <div class="evolution is-positive">
-                                    <span>+ 3.2%</span>
-                                    <i data-feather="trending-up"></i>
-                                </div>
-                            </td>
-                            <td data-th="Buy" class="has-text-right">
-                                <button class="button btn-align primary-btn raised">
-                                    Trade Now
-                                </button>
-                            </td>
-                        </tr>
+                        @endforeach
+                        
                     </tbody>
                 </table>
             </div>
@@ -756,96 +444,7 @@
         </div>
     </div>
 
-    <!--Mockup Section-->
-    <div class="section is-app-grey">
-        <div class="container">
-            <!-- Title -->
-            <div class="section-title-wrapper has-text-centered pt-40 pb-40">
-                <h2 class="section-title-landing">Get ready for serious income</h2>
-                <h4>You won't be able to go back after this one.</h4>
-            </div>
-
-            <!--Mockup-->
-            <div class="mockup-wrap">
-                <div class="image-wrap">
-                    <img class="full-image-minimal" src="{{asset('img/graphics/compositions/crypto-feature-2-core.png') }}" data-base-url="{{asset('img/graphics/compositions/crypto-feature-2') }}" data-extension=".png" alt="" />
-
-                    <div class="columns is-multiline app-features is-pulled">
-                        <div class="column is-6">
-                            <!-- Side icon box -->
-                            <div class="content content-flex">
-                                <div class="dark-text">
-                                    <i class="im im-icon-Safe-Box2 is-size-2 color-primary"></i>
-                                </div>
-                                <div class="dark-text has-text-left ml-30">
-                                    <h5 class="text-bold">Virtual Safebox</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, ea vis numquam vivendo, voluptua
-                                        argumentum an pri. Duo illud consequat in, eum eu veri ipsum
-                                        oporteat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-6">
-                            <!-- Side icon box -->
-                            <div class="content content-flex">
-                                <div class="dark-text">
-                                    <i class="im im-icon-Bank is-size-2 color-primary"></i>
-                                </div>
-                                <div class="dark-text has-text-left ml-30">
-                                    <h5 class="text-bold">Bank Connectors</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, ea vis numquam vivendo, voluptua
-                                        argumentum an pri. Duo illud consequat in, eum eu veri ipsum
-                                        oporteat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-6">
-                            <!-- Side icon box -->
-                            <div class="content content-flex">
-                                <div class="dark-text">
-                                    <i class="im im-icon-Lock is-size-2 color-primary"></i>
-                                </div>
-                                <div class="dark-text has-text-left ml-30">
-                                    <h5 class="text-bold">Secured transactions</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, ea vis numquam vivendo, voluptua
-                                        argumentum an pri. Duo illud consequat in, eum eu veri ipsum
-                                        oporteat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-6">
-                            <!-- Side icon box -->
-                            <div class="content content-flex">
-                                <div class="dark-text">
-                                    <i class="im im-icon-Wallet-2 is-size-2 color-primary"></i>
-                                </div>
-                                <div class="dark-text has-text-left ml-30">
-                                    <h5 class="text-bold">Robust wallet</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, ea vis numquam vivendo, voluptua
-                                        argumentum an pri. Duo illud consequat in, eum eu veri ipsum
-                                        oporteat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section-cta has-text-centered pb-40">
-                        <a href="#" class="button button-cta primary-btn is-rounded">Start my Free Trial</a>
-                        <p>No credit card required.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <!--FAQ-->
     <div class="section">
         <div class="container">
@@ -859,187 +458,42 @@
                 <div class="columns">
                     <div class="column is-5 is-offset-1">
                         <!--Faq Block-->
+                        @foreach($faq1 as $item)
                         <div class="faq-block">
                             <div class="block-header">
                                 <div class="header-icon">
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <h3>How can I properly setup an account?</h3>
+                                <h3>{{$item->titre}}</h3>
                             </div>
                             <div class="block-body">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
+                                    {{$item->details}}
                                 </p>
                             </div>
                         </div>
+                        @endforeach
                         <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>Can I setup email alerts?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
-                        <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>Can I buy coins anytime, any day?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
-                        <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>Can I change my plan after sign up?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
-                        <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>Can I ask for payouts?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="column is-5">
                         <!--Faq Block-->
+                        @foreach($faq2 as $item)
                         <div class="faq-block">
                             <div class="block-header">
                                 <div class="header-icon">
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <h3>Can I automate trading?</h3>
+                                <h3>{{$item->titre}}</h3>
                             </div>
                             <div class="block-body">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
+                                {{$item->details}}
                                 </p>
                             </div>
                         </div>
-                        <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>Can I schedule trading operations in advance?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
-                        <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>How do I contact an advisor?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
-                        <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>Can I add members of my team to my account?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
-                        <!--Faq Block-->
-                        <div class="faq-block">
-                            <div class="block-header">
-                                <div class="header-icon">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <h3>Can I manage user roles?</h3>
-                            </div>
-                            <div class="block-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Invidiosum nomen est, infame, suspectum. Utilitatis causa
-                                    amicitia est quaesita. Non laboro, inquit, de nomine. Duo Reges:
-                                    constructio interrete. Aliter homines, aliter philosophos loqui
-                                    putas oportere?
-                                </p>
-                            </div>
-                        </div>
+                        @endforeach
+                        
                     </div>
                 </div>
             </div>
@@ -1060,63 +514,31 @@
                     <div class="css-carousel">
                         <i class="fa fa-quote-left"></i>
                         <!-- Hidden inputs -->
-                        <input type="radio" name="slides" id="radio-1" checked data-testimonial-image="greg" />
-                        <input type="radio" name="slides" id="radio-2" data-testimonial-image="jane" />
-                        <input type="radio" name="slides" id="radio-3" data-testimonial-image="andres" />
-                        <input type="radio" name="slides" id="radio-4" data-testimonial-image="yuko" />
+                        @foreach($testimonials as $item)
+                        <input type="radio" name="slides" id="{{$item->name}}" checked data-testimonial-image="{{$item->name}}" />
+                        @endforeach
                         <ul class="slides">
                             <!-- Carousel item -->
+                            @foreach($testimonials as $item)
+                            <li class="slide">
+                                <p>
+                                    <q>{{$item->titre}}</q>
+                                    <span class="text">{{$item->detail}}</span>
+                                    <span class="author">
+                                        <img src="{{asset('images')}}/{{$item->image}}" alt="" data-demo-src="{{asset('images')}}/{{$item->image}}" />
+                                        {{$item->name}}
+                                    </span>
+                                </p>
+                            </li>
+                            @endforeach
+                            <!-- Carousel item -->
                             
-                            <li class="slide">
-                                <p>
-                                    <q>It is a pleasure to use this service</q>
-                                    <span class="text">An awesome platform to learn from</span>
-                                    <span class="author">
-                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/greg.png') }}" />
-                                        Greg Norton
-                                    </span>
-                                </p>
-                            </li>
-                            <!-- Carousel item -->
-                            <li class="slide">
-                                <p>
-                                    <q>Awesome and available mentors</q>
-                                    <span class="text">There is always somebody to help you.</span>
-                                    <span class="author">
-                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/jane.png') }}" />
-                                        Jane Mitchells
-                                    </span>
-                                </p>
-                            </li>
-                            <!-- Carousel item -->
-                            <li class="slide">
-                                <p>
-                                    <q>A cool place to learn cool things</q>
-                                    <span class="text">Tons of quality design materials available.</span>
-                                    <span class="author">
-                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/andres.png') }}" />
-                                        Andres Fogossa
-                                    </span>
-                                </p>
-                            </li>
-                            <!-- Carousel item -->
-                            <li class="slide">
-                                <p>
-                                    <q>From wannabe to professional</q>
-                                    <span class="text">Great experience and awesome learning curve.</span>
-                                    <span class="author">
-                                        <img src="https://via.placeholder.com/150x150" alt="" data-demo-src="{{asset('img/demo/covers/yuko.png') }}" />
-                                        Yuko Hattori
-                                    </span>
-                                </p>
-                            </li>
                         </ul>
                         <!-- Slider controls -->
                         <div class="carousel-dots">
+                            @foreach($testimonials as $item)
                             <label for="radio-1" id="dotForRadio-1"></label>
-                            <label for="radio-2" id="dotForRadio-2"></label>
-                            <label for="radio-3" id="dotForRadio-3"></label>
-                            <label for="radio-4" id="dotForRadio-4"></label>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -1161,58 +583,23 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <!-- Recent Post -->
+                        @foreach($last_news as $item)
                         <div class="side-post">
                             <!-- Featured image -->
                             <div class="post-image">
-                                <img src="https://via.placeholder.com/1600x900" alt="" data-demo-src="../images.pexels.com/photos/4874400/pexels-photo-4874400d93f.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=340" />
+                                <img src="{{asset('images')}}/{{$item->image}}" alt="" data-demo-src="../images.pexels.com/photos/1037913/pexels-photo-103791303b0.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=340&amp;w=340" />
                                 <div class="image-overlay"></div>
                             </div>
                             <!-- Featured content -->
                             <div class="post-content">
-                                <h3>
-                                    <a href="#">Affraid that the market eventually collapses?</a>
-                                </h3>
+                                <h3><a href="#">{{$item->titre}}</a></h3>
                                 <p>
-                                    Homines enim eruditos et sobrios ut infaustos et inutiles
-                                    vitant, eo...
+                                    {{ $item->text}}
                                 </p>
                             </div>
                         </div>
-                        <!-- Recent Post -->
-                        <div class="side-post">
-                            <!-- Featured image -->
-                            <div class="post-image">
-                                <img src="https://via.placeholder.com/1600x900" alt="" data-demo-src="../images.pexels.com/photos/1037913/pexels-photo-103791303b0.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=340&amp;w=340" />
-                                <div class="image-overlay"></div>
-                            </div>
-                            <!-- Featured content -->
-                            <div class="post-content">
-                                <h3><a href="#">Say Hello to Nina Lopez, our new mentor</a></h3>
-                                <p>
-                                    Homines enim eruditos et sobrios ut infaustos et inutiles
-                                    vitant, eo...
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Recent Post -->
-                        <div class="side-post">
-                            <!-- Featured image -->
-                            <div class="post-image">
-                                <img src="https://via.placeholder.com/1600x900" alt="" data-demo-src="../images.pexels.com/photos/210600/pexels-photo-21060003b0.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=340&amp;w=340" />
-                                <div class="image-overlay"></div>
-                            </div>
-                            <!-- Featured content -->
-                            <div class="post-content">
-                                <h3>
-                                    <a href="#">5 tips to make (almost) perfect investments</a>
-                                </h3>
-                                <p>
-                                    Homines enim eruditos et sobrios ut infaustos et inutiles
-                                    vitant, eo...
-                                </p>
-                            </div>
-                        </div>
+                        @endforeach
+                        
                     </div>
                 </div>
             </div>

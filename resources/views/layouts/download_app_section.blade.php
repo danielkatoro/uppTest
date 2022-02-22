@@ -56,22 +56,33 @@
                                 <table class="table table-hover js-basic-example contact_list">
                                     <thead>
                                         <tr>
-                                            <th class="center">#</th>
-                                            <th class="center"> Titre </th>
-                                            <th class="center"> Details </th>
-                                            <th class="center"> Nom </th>
+                                            <th class="center">Vide</th>
+                                            <th class="center"> Video </th>
+                                            <th class="center"> Element 1 </th>
+                                            <th class="center"> Detail 1 </th>
+                                            <th class="center"> Element 2 </th>
+                                            <th class="center"> Detail 2 </th>
+                                            <th class="center"> Element 3 </th>
+                                            <th class="center"> Detail 3 </th>
+                                            <th class="center"> Element 4 </th>
+                                            <th class="center"> Detail 4 </th>
                                             <th class="center"> Action </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach($download_app as $item)
                                         <tr class="odd gradeX">
-                                            <!-- <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->image}}" alt="">
+                                            <td class="table-img center">
+                                                <video src="{{asset('images')}}/{{$item->video}}" controls></video>
                                             </td>
-                                            <td class="center">{{$item->titre}}</td>
-                                            <td class="center">{{$item->detail}}</td>
-                                            <td class="center">{{$item->name}}</td>
+                                            <td class="center">{{$item->titre1}}</td>
+                                            <td class="center">{{$item->text1}}</td>
+                                            <td class="center">{{$item->titre2}}</td>
+                                            <td class="center">{{$item->text2}}</td>
+                                            <td class="center">{{$item->titre3}}</td>
+                                            <td class="center">{{$item->text3}}</td>
+                                            <td class="center">{{$item->titre4}}</td>
+                                            <td class="center">{{$item->text4}}</td>
                                             <td class="center">
                                                 <a href="edit-employee.html" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
@@ -79,17 +90,23 @@
                                                 <a href="#" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
-                                            </td> -->
+                                            </td>
                                         </tr>
                                         @endforeach
                                         
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                        <th class="center">#</th>
-                                            <th class="center"> Titre </th>
-                                            <th class="center"> Details </th>
-                                            <th class="center"> Nom </th>
+                                        <th class="center">Vide</th>
+                                            <th class="center"> Video </th>
+                                            <th class="center"> Element 1 </th>
+                                            <th class="center"> Detail 1 </th>
+                                            <th class="center"> Element 2 </th>
+                                            <th class="center"> Detail 2 </th>
+                                            <th class="center"> Element 3 </th>
+                                            <th class="center"> Detail 3 </th>
+                                            <th class="center"> Element 4 </th>
+                                            <th class="center"> Detail 4 </th>
                                             <th class="center"> Action </th>
                                         </tr>
                                     </tfoot>
