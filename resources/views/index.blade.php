@@ -587,7 +587,7 @@
                         <div class="side-post">
                             <!-- Featured image -->
                             <div class="post-image">
-                                <img src="{{asset('images')}}/{{$item->image}}" alt="" data-demo-src="../images.pexels.com/photos/1037913/pexels-photo-103791303b0.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=340&amp;w=340" />
+                                <img src="{{asset('images')}}/{{$item->image}}" alt="" data-demo-src="{{asset('images')}}/{{$item->image}}" />
                                 <div class="image-overlay"></div>
                             </div>
                             <!-- Featured content -->
