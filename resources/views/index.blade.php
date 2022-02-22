@@ -164,76 +164,30 @@
             <div class="content-wrapper">
                 <div class="columns is-vcentered is-multiline has-text-centered">
                     <!-- Icon block -->
+                    @foreach($buy_and_sell as $item)
                     <div class="column is-3">
                         <div class="wavy-icon-box">
                             <div class="is-icon-reveal">
-                                <i class="im im-icon-Bitcoin"></i>
+                                <!-- <i class="im im-icon-Bitcoin"></i> -->
+                                <img src="{{ asset('images') }}/{{ $item->icon}}" alt="">
                             </div>
-                            <div class="box-title">250+ Currencies</div>
+                            <div class="box-title">{{$item->titre}}</div>
                             <p class="box-content is-tablet-padded">
-                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
-                                hinc solet tincidunt, nec et iisque placerat pertinax.
+                                {{$item->text}}
                             </p>
                         </div>
                     </div>
-                    <!-- Icon block -->
-                    <div class="column is-3">
-                        <div class="wavy-icon-box">
-                            <div class="is-icon-reveal">
-                                <i class="im im-icon-Structure"></i>
-                            </div>
-                            <div class="box-title">Blockchain +</div>
-                            <p class="box-content is-tablet-padded">
-                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
-                                hinc solet tincidunt, nec et iisque placerat pertinax.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Icon block -->
-                    <div class="column is-3">
-                        <div class="wavy-icon-box">
-                            <div class="is-icon-reveal">
-                                <i class="im im-icon-Wallet-2"></i>
-                            </div>
-                            <div class="box-title">Secured Wallet</div>
-                            <p class="box-content is-tablet-padded">
-                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
-                                hinc solet tincidunt, nec et iisque placerat pertinax.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Icon block -->
-                    <div class="column is-3">
-                        <div class="wavy-icon-box">
-                            <div class="is-icon-reveal">
-                                <i class="im im-icon-Timer-2"></i>
-                            </div>
-                            <div class="box-title">Real Time</div>
-                            <p class="box-content is-tablet-padded">
-                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
-                                hinc solet tincidunt, nec et iisque placerat pertinax.
-                            </p>
-                        </div>
-                    </div>
+                    @endforeach
+                    
                 </div>
                 <div class="has-text-centered pt-40 pb-40">
                     <div class="tabs partner-tabs is-centered">
                         <ul>
+                            @foreach($parteners_logo as $item)
                             <li>
-                                <a><img class="partner-logo" src="{{asset('img/logos/custom/covenant.svg') }}" alt="" /></a>
+                                <a><img class="partner-logo" src="{{asset('images') }}/{{$item->logo}}" alt="" /></a>
                             </li>
-                            <li>
-                                <a><img class="partner-logo" src="{{asset('img/logos/custom/infinite.svg') }}" alt="" /></a>
-                            </li>
-                            <li>
-                                <a><img class="partner-logo" src="{{asset('img/logos/custom/phasekit.svg') }}" alt="" /></a>
-                            </li>
-                            <li>
-                                <a><img class="partner-logo" src="{{asset('img/logos/custom/grubspot.svg') }}" alt="" /></a>
-                            </li>
-                            <li>
-                                <a><img class="partner-logo" src="{{asset('img/logos/custom/gutwork.svg') }}" alt="" /></a>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

@@ -2,9 +2,11 @@
 
 use App\Models\App_config;
 use App\Models\principal_banner;
+use App\Models\buy_and_sell_section;
 use App\Models\crypto_slide_section;
 use App\Models\testimonials_section;
 use Illuminate\Support\Facades\Route;
+use App\Models\parteners_logo_section;
 use App\Http\Controllers\App_configController;
 use App\Http\Controllers\faq_sectionController;
 use App\Http\Controllers\get_ready_sectionController;
@@ -39,7 +41,9 @@ Route::get('/', function () {
     $id1=1;
     $principal_banner = principal_banner::find($id1);
     $crypto_slide = crypto_slide_section::all();
-    return view('index',compact('app_config','principal_banner','crypto_slide'));
+    $buy_and_sell = buy_and_sell_section::all();
+    $parteners_logo = parteners_logo_section::all();
+    return view('index',compact('app_config','principal_banner','crypto_slide','buy_and_sell','parteners_logo'));
 });
 
 Route::name('home')->get('/@dmin', function () {
