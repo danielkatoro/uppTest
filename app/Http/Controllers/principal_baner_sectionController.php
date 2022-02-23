@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\App_config;
 use Illuminate\Http\Request;
 use App\Models\principal_banner;
+use Illuminate\Support\Facades\DB;
 
 class principal_baner_sectionController extends Controller
 {
@@ -15,7 +16,7 @@ class principal_baner_sectionController extends Controller
     }
 
     public function Update_principal_banner(Request $request){
-        
+        $id = $request->id;
         $titre = $request->titre;
         $text = $request->text;
         $image = $request->file('file');
@@ -27,6 +28,10 @@ class principal_baner_sectionController extends Controller
         $principal_banner->text = $text;
         $principal_banner->image = $imageName;
         $principal_banner->save();
+
+        DB::update("UPDATE principal_banners SET titre=:titre, text=:text, image=:image WHERE id=:id",[$titre, $text, $image, $id]);
+
+
         return 'updateting okey';
     }
 
