@@ -14,4 +14,20 @@ class principal_baner_sectionController extends Controller
         return view('layouts.principal_banner',compact('principal_banner','app_config'));
     }
 
+    public function Update_principal_banner(Request $request){
+        
+        $titre = $request->titre;
+        $text = $request->text;
+        $image = $request->file('file');
+        $imageName = time().'.'.$image->extension();
+        $image->move(public_path('images'),$imageName);
+
+        $principal_banner = principal_banner::find($request->id);
+        $principal_banner->titre = $$titre;
+        $principal_banner->text = $text;
+        $principal_banner->image = $imageName;
+        $principal_banner->save();
+        return 'updateting okey';
+    }
+
 }

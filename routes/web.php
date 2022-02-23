@@ -26,6 +26,7 @@ use App\Http\Controllers\start_traiding_sectionController;
 use App\Http\Controllers\principal_baner_sectionController;
 use App\Http\Controllers\amazing_features_sectionController;
 use App\Http\Controllers\additiona_service_sectionController;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,8 +54,8 @@ Route::get('/', function () {
     $amazing_features = amazing_features_section::all();
     $additional_service = additional_service_section::all();
     $start_training = start_traiding_section::all();
-    $faq1 = faq_section::select("SELECT * FROM faq_sections DESC LIMIT 5");
-    $faq2 = faq_section::select("SELECT * FROM faq_sections LIMIT 5");
+    $faq1 = DB::select("SELECT * FROM faq_sections LIMIT 5");
+    $faq2 = DB::select("SELECT * FROM faq_sections LIMIT 5");
     $testimonials = testimonials_section::all();
     $last_news = last_news_section::all();
 
@@ -98,6 +99,7 @@ Route::name('amazing_features')->get('/@dmin/amazing_features', [amazing_feature
 
 Route::name('additional_services')->get('/@dmin/additional_services', [additiona_service_sectionController::class, 'index'])->middleware('auth');
 
-
+// update routes
+Route::name('update_principal_banner')->post('update_principal_banner', [principal_baner_sectionController::class, 'Update_principal_banner'])->middleware('auth');
 
 
