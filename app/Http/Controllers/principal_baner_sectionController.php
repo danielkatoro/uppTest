@@ -24,7 +24,7 @@ class principal_baner_sectionController extends Controller
         $image->move(public_path('images'),$imageName);
 
         $principal_banner = principal_banner::find($request->id);
-        $principal_banner->titre = $$titre;
+        $principal_banner->titre = $titre;
         $principal_banner->text = $text;
         $principal_banner->image = $imageName;
         $principal_banner->save();
