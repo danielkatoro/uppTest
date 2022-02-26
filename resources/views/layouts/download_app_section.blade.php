@@ -56,7 +56,6 @@
                                 <table class="table table-hover js-basic-example contact_list">
                                     <thead>
                                         <tr>
-                                            <th class="center">Vide</th>
                                             <th class="center"> Video </th>
                                             <th class="center"> Element 1 </th>
                                             <th class="center"> Detail 1 </th>
@@ -72,8 +71,8 @@
                                     <tbody>
                                         @foreach($download_app as $item)
                                         <tr class="odd gradeX">
-                                            <td class="table-img center">
-                                                <video src="{{asset('images')}}/{{$item->video}}" controls></video>
+                                            <td class="">
+                                                <video src="{{asset('images')}}/{{$item->video}}" style="height: 50px;" controls></video>
                                             </td>
                                             <td class="center">{{$item->titre1}}</td>
                                             <td class="center">{{$item->text1}}</td>
@@ -97,7 +96,6 @@
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                        <th class="center">Vide</th>
                                             <th class="center"> Video </th>
                                             <th class="center"> Element 1 </th>
                                             <th class="center"> Detail 1 </th>

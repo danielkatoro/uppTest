@@ -102,4 +102,4 @@ Route::name('additional_services')->get('/@dmin/additional_services', [additiona
 // update routes
 Route::name('update_principal_banner')->post('update_principal_banner', [principal_baner_sectionController::class, 'Update_principal_banner'])->middleware('auth');
 
-
+Route::name('store_buy_sell')->post('store_buy_sell', [buy_and_sell_sectionController::class, 'store_buy_sell'])->middleware('auth');
