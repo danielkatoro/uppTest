@@ -23,14 +23,11 @@ class principal_baner_sectionController extends Controller
         $imageName = time().'.'.$image->extension();
         $image->move(public_path('images'),$imageName);
 
-        $principal_banner = principal_banner::find($request->id);
-        $principal_banner->titre = $titre;
-        $principal_banner->text = $text;
-        $principal_banner->image = $imageName;
-        $principal_banner->save();
-
-        DB::update("UPDATE principal_banners SET titre=:titre, text=:text, image=:image WHERE id=:id",[$titre, $text, $image, $id]);
-
+        DB::table('principal_banners')->where('id', $id)->update([
+            'titre' => $titre,
+            'text' => $text,
+            'image' => $imageName
+        ]);
 
         return 'updateting okey';
     }

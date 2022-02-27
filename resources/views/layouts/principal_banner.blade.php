@@ -87,7 +87,7 @@
                         @foreach($principal_banner as $item)
                         <form action="{{ route('update_principal_banner')}}" method="POST" enctype="multipart/form-data" class="form-horizontal">
                         @csrf    
-                        <input type="hidden" name="id">                        
+                        <input type="hidden" name="id" value="{{ $item->id}}">                        
                             <div class="row clearfix">
                                 <div class="col-sm-6">
                                     <div class="form-group">

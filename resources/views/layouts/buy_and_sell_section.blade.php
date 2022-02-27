@@ -31,8 +31,7 @@
                         <div class="modal-body">
                             <form action="{{ route('store_buy_sell')}}" method="POST" >
                                 @csrf
-                            <label for="image">Icon</label>    
-                                <input type="file" name="file" id="file"><br>
+                            <br>
                                 <label for="email_address1">Titre</label>
                                 <div class="form-group">
                                     <div class="form-line">
@@ -45,6 +44,8 @@
                                         <input type="text" id="text" class="form-control" placeholder="le details" name="text">
                                     </div>
                                 </div>
+                                <label for="image">Icon</label>    
+                                <input type="file" name="file" id="file">
                                 <button type="submit" class="btn btn-info waves-effect">Enregistrer</button>
                                 <button type="button" class="btn btn-danger waves-effect" data-bs-dismiss="modal">Annuler</button>
                             </form>

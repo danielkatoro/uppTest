@@ -25,10 +25,12 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="{{ route('store_buy_sell')}}" method="POST">
+                                        <form action="{{ route('crypto_slide_store')}}" method="POST">
                                             @csrf
-                                            <label for="image">Logo</label>
-                                            <input type="file" name="file" id="file"><br>
+                                            <div class="form-group">
+                                                <label for="image">Logo</label>
+                                                <input type="file" name="file"><br>
+                                            </div>
                                             <label for="name">Nom</label>
                                             <div class="form-group">
                                                 <div class="form-line">
@@ -39,6 +41,12 @@
                                             <div class="form-group">
                                                 <div class="form-line">
                                                     <input type="text" id="prix" class="form-control" placeholder="0.0" name="prix">
+                                                </div>
+                                            </div>
+                                            <label for="pourcentage">Pourcentage d'evolution</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id="pourcentage" class="form-control" placeholder="16" name="pourcentage">
                                                 </div>
                                             </div>
                                             <button type="submit" class="btn btn-info waves-effect">Enregistrer</button>
@@ -103,10 +111,10 @@
                                         <td class="center">{{$item->prix}}</td>
                                         <td class="center">{{$item->pourcentage}}</td>
                                         <td class="center">
-                                            <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                            <a href="/edit_crypto_slide{{$item->id}}" class="btn btn-tbl-edit">
                                                 <i class="material-icons">create</i>
                                             </a>
-                                            <a href="#" class="btn btn-tbl-delete">
+                                            <a href="/crypto_slide_destroy{{$item->id}}" class="btn btn-tbl-delete">
                                                 <i class="material-icons">delete_forever</i>
                                             </a>
                                         </td>

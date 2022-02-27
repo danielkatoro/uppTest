@@ -88,10 +88,15 @@ Route::name('last_news')->get('/@dmin/last_news', [last_news_sectionController::
 Route::name('get_ready')->get('/@dmin/get_ready', [get_ready_sectionController::class, 'index'])->middleware('auth');
 
 Route::name('faq')->get('/@dmin/faq', [faq_sectionController::class, 'index'])->middleware('auth');
+Route::name('store_faq')->post('/@dmin/store_faq', [faq_sectionController::class, 'store_faq'])->middleware('auth');
 
 Route::name('download_app')->get('/@dmin/download_app', [download_app_sectionController::class, 'index'])->middleware('auth');
 
+
 Route::name('crypto_slide')->get('/@dmin/crypto_slide', [crypto_slide_sectionController::class, 'index'])->middleware('auth');
+Route::name('crypto_slide_store')->post('/@dmin/crypto_slide_store', [crypto_slide_sectionController::class, 'crypto_slide_store'])->middleware('auth');
+Route::name('crypto_slide_destroy')->get('/@dmin/crypto_slide_destroy/{id}', [crypto_slide_sectionController::class, 'crypto_slide_destroy'])->middleware('auth');
+
 
 Route::name('buy_and_sell')->get('/@dmin/buy_and_sell', [buy_and_sell_sectionController::class, 'index'])->middleware('auth');
 

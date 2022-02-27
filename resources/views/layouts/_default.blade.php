@@ -9,7 +9,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>{{ isset($title) ? $title .' | ':' ' }} Admin</title>
     <!-- Favicon-->
-    <link rel="icon" href="{{asset('admin/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{asset('images') }}/{{$app_config->logoimage}}" type="image/x-icon">
     <!-- Plugins Core Css -->
     <link href="{{asset('admin/css/app.min.css') }}" rel="stylesheet">
     <!-- Custom Css -->
