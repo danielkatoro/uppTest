@@ -89,6 +89,9 @@ Route::name('get_ready')->get('/@dmin/get_ready', [get_ready_sectionController::
 
 Route::name('faq')->get('/@dmin/faq', [faq_sectionController::class, 'index'])->middleware('auth');
 Route::name('store_faq')->post('/@dmin/store_faq', [faq_sectionController::class, 'store_faq'])->middleware('auth');
+Route::name('edit_faq')->get('/@dmin/edit_faq/{id}', [faq_sectionController::class, 'edit_faq'])->middleware('auth');
+Route::name('update_faq')->post('/@dmin/update_faq', [faq_sectionController::class, 'update_faq'])->middleware('auth');
+Route::name('edit_faq')->get('/@dmin/edit_faq/{id}', [faq_sectionController::class, 'edit_faq'])->middleware('auth');
 
 Route::name('download_app')->get('/@dmin/download_app', [download_app_sectionController::class, 'index'])->middleware('auth');
 
