@@ -98,13 +98,13 @@
                                             <td class="table-img center">
                                                 <img src="{{asset('images')}}/{{$item->image}}" alt="">
                                             </td>
-                                            <td class="center">{{$item->titre}}</td>
-                                            <td class="center">{{$item->details}}</td>
+                                            <td >{{$item->titre}}</td>
+                                            <td >{{$item->details}}</td>
                                             <td class="center">
-                                                <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                                <a href="edit_faq/{{$item->id}}" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
                                                 </a>
-                                                <a href="#" class="btn btn-tbl-delete">
+                                                <a href="destroy_faq/{{$item->id}}" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
                                             </td>

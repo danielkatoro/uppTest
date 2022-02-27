@@ -26,9 +26,10 @@ class faq_sectionController extends Controller
     }
 
     public function edit_faq($id){
+        $app_config = App_config::find(2);
         $data = DB::select("SELECT * FROM faq_sections WHERE id=?",[$id]);
         $faq = $data[0];
-        return view('edit_faq', compact('faq'));
+        return view('layouts.edit_faq', compact('faq','app_config'));
     }
 
     public function update_faq(Request $request){
