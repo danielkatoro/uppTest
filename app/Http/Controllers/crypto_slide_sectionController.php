@@ -17,9 +17,9 @@ class crypto_slide_sectionController extends Controller
 
     public function crypto_slide_store(Request $request){
 
-        $logoimage = $request->file('file');
-        $imageName = time().'.'.$logoimage->extension();
-        $logoimage->move(public_path('images'),$imageName);
+        $image = $request->file('file');
+        $imageName = time().'.'.$image->extension();
+        $image->move(public_path('images'),$imageName);
 
         DB::table('crypto_slide_sections')->insert([
             'logo' => $imageName,
@@ -32,9 +32,10 @@ class crypto_slide_sectionController extends Controller
     }
 
     public function edit_crypto_slide($id){
+        $app_config = App_config::find(2);
         $data = DB::select("SELECT * FROM crypto_slide_sections WHERE id=?",[$id]);
-        $player = $data[0];
-        return view('edit_player', compact('player'));
+        $crypto_slide = $data[0];
+        return view('layouts.edit_crypto_slide', compact('crypto_slide','app_config'));
     }
 
     public function update_crypto_slide(Request $request){

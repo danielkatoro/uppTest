@@ -98,6 +98,8 @@ Route::name('download_app')->get('/@dmin/download_app', [download_app_sectionCon
 
 Route::name('crypto_slide')->get('/@dmin/crypto_slide', [crypto_slide_sectionController::class, 'index'])->middleware('auth');
 Route::name('crypto_slide_store')->post('/@dmin/crypto_slide_store', [crypto_slide_sectionController::class, 'crypto_slide_store'])->middleware('auth');
+Route::name('edit_crypto_slide')->get('/@dmin/edit_crypto_slide/{id}', [crypto_slide_sectionController::class, 'edit_crypto_slide'])->middleware('auth');
+Route::name('update_crypto_slide')->post('/@dmin/update_crypto_slide', [crypto_slide_sectionController::class, 'update_crypto_slide'])->middleware('auth');
 Route::name('crypto_slide_destroy')->get('/@dmin/crypto_slide_destroy/{id}', [crypto_slide_sectionController::class, 'crypto_slide_destroy'])->middleware('auth');
 
 
