@@ -29,7 +29,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="{{ route('store_buy_sell')}}" method="POST" >
+                            <form action="{{ route('store_buy_sell')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                             <br>
                                 <label for="email_address1">Titre</label>
@@ -69,17 +69,7 @@
                                 <a href="#" onClick="return false;" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">more_vert</i>
                                 </a>
-                                <ul class="dropdown-menu float-end">
-                                    <li>
-                                        <a href="#" onClick="return false;">Action</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">Another action</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">Something else here</a>
-                                    </li>
-                                </ul>
+                                
                             </li>
                         </ul>
                     </div>
@@ -103,10 +93,10 @@
                                         <td class="center">{{$item->titre}}</td>
                                         <td class="center">{{$item->text}}</td>
                                         <td class="center">
-                                            <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                            <a href="/@dmin/edit_buy_sell/{{$item->id}}" class="btn btn-tbl-edit">
                                                 <i class="material-icons">create</i>
                                             </a>
-                                            <a href="#" class="btn btn-tbl-delete">
+                                            <a href="/@dmin/buy_sell_destroy/{{$item->id}}" class="btn btn-tbl-delete">
                                                 <i class="material-icons">delete_forever</i>
                                             </a>
                                         </td>

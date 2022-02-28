@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\App_config;
-use App\Models\buy_and_sell_section;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\buy_and_sell_section;
 
 class buy_and_sell_sectionController extends Controller
 {
@@ -29,24 +30,26 @@ class buy_and_sell_sectionController extends Controller
         return 'okey';
     }
 
-    public function edit_crypto_slide($id){
+    public function edit_buy_sell($id){
         $app_config = App_config::find(2);
-        $data = DB::select("SELECT * FROM crypto_slide_sections WHERE id=?",[$id]);
-        $crypto_slide = $data[0];
-        return view('layouts.edit_crypto_slide', compact('crypto_slide','app_config'));
+        $data = DB::select("SELECT * FROM buy_and_sell_sections WHERE id=?",[$id]);
+        $edit_buy_sell = $data[0];
+        return view('layouts.edit_buy_sell', compact('edit_buy_sell','app_config'));
     }
 
-    public function update_crypto_slide(Request $request){
+    public function update_buy_sell(Request $request){
 
+        $titre = $request->titre;
+        $text = $request->text;
         $logoimage = $request->file('file');
         $imageName = time().'.'.$logoimage->extension();
         $logoimage->move(public_path('images'),$imageName);
+
         $id = $request->id;
-        DB::table('crypto_slide_sections')->where('id', $id)->update([
-            'logo' => $imageName,
-            'name' => $request->name,
-            'prix' => $request->prix,
-            'pourcentage' => $request->pourcentage
+        DB::table('buy_and_sell_sections')->where('id', $id)->update([
+            'titre' => $titre,
+            'text' => $text,
+            'icon' => $imageName
         ]);
 
         return 'update crypto ok';
@@ -54,7 +57,7 @@ class buy_and_sell_sectionController extends Controller
 
 
 
-    public function crypto_slide_destroy($id){
-        $deleted = DB::table('crypto_slide_sections')->where('id', '=', $id)->delete();
+    public function buy_sell_destroy($id){
+        $deleted = DB::table('buy_and_sell_sections')->where('id', '=', $id)->delete();
     }
 }

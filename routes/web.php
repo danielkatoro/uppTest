@@ -104,6 +104,11 @@ Route::name('crypto_slide_destroy')->get('/@dmin/crypto_slide_destroy/{id}', [cr
 
 
 Route::name('buy_and_sell')->get('/@dmin/buy_and_sell', [buy_and_sell_sectionController::class, 'index'])->middleware('auth');
+Route::name('store_buy_sell')->post('store_buy_sell', [buy_and_sell_sectionController::class, 'store_buy_sell'])->middleware('auth');
+Route::name('edit_buy_sell')->get('/@dmin/edit_buy_sell/{id}', [buy_and_sell_sectionController::class, 'edit_buy_sell'])->middleware('auth');
+Route::name('update_buy_sell')->post('/@dmin/update_buy_sell', [buy_and_sell_sectionController::class, 'update_buy_sell'])->middleware('auth');
+Route::name('buy_sell_destroy')->get('/@dmin/buy_sell_destroy/{id}', [buy_and_sell_sectionController::class, 'buy_sell_destroy'])->middleware('auth');
+
 
 Route::name('amazing_features')->get('/@dmin/amazing_features', [amazing_features_sectionController::class, 'index'])->middleware('auth');
 
@@ -112,4 +117,4 @@ Route::name('additional_services')->get('/@dmin/additional_services', [additiona
 // update routes
 Route::name('update_principal_banner')->post('update_principal_banner', [principal_baner_sectionController::class, 'Update_principal_banner'])->middleware('auth');
 
-Route::name('store_buy_sell')->post('store_buy_sell', [buy_and_sell_sectionController::class, 'store_buy_sell'])->middleware('auth');
+
