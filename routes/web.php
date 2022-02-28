@@ -82,6 +82,11 @@ Route::name('testimonials_section')->get('/@dmin/testimonials_section', [testimo
 Route::name('start_traiding')->get('/@dmin/start_traiding', [start_traiding_sectionController::class, 'index'])->middleware('auth');
 
 Route::name('parteners_logo')->get('/@dmin/parteners_logo', [parteners_logo_sectionController::class, 'index'])->middleware('auth');
+Route::name('parteners_logo_store')->post('/@dmin/parteners_logo_store', [parteners_logo_sectionController::class, 'parteners_logo_store'])->middleware('auth');
+Route::name('edit_crypto_slide')->get('/@dmin/edit_crypto_slide/{id}', [crypto_slide_sectionController::class, 'edit_crypto_slide'])->middleware('auth');
+Route::name('update_crypto_slide')->post('/@dmin/update_crypto_slide', [crypto_slide_sectionController::class, 'update_crypto_slide'])->middleware('auth');
+Route::name('crypto_slide_destroy')->get('/@dmin/crypto_slide_destroy/{id}', [crypto_slide_sectionController::class, 'crypto_slide_destroy'])->middleware('auth');
+
 
 Route::name('last_news')->get('/@dmin/last_news', [last_news_sectionController::class, 'index'])->middleware('auth');
 

@@ -19,28 +19,23 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="formModal">Nouveau Buy and Sell</h5>
+                            <h5 class="modal-title" id="formModal">Nouvea Partener Loog</h5>
                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="{{ route('store_buy_sell')}}" method="POST" >
+                            <form action="{{ route('parteners_logo_store')}}" method="POST" enctype="multipart/form-data" >
                                 @csrf
-                            <label for="image">Icon</label>    
+                            <label for="image">Logo</label>    
                                 <input type="file" name="file" id="file"><br>
-                                <label for="email_address1">Titre</label>
+                                <label for="email_address1">Nom</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="titre" class="form-control" placeholder="Le titre" name="titre">
+                                        <input type="text" id="name" class="form-control" placeholder="Nom" name="name">
                                     </div>
                                 </div>
-                                <label for="password">Text</label>
-                                <div class="form-group">
-                                <div class="form-line">
-                                        <input type="text" id="text" class="form-control" placeholder="le details" name="text">
-                                    </div>
-                                </div>
+                               
                                 <button type="submit" class="btn btn-info waves-effect">Enregistrer</button>
                                 <button type="button" class="btn btn-danger waves-effect" data-bs-dismiss="modal">Annuler</button>
                             </form>
