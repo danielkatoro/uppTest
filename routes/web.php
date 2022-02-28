@@ -118,6 +118,9 @@ Route::name('buy_sell_destroy')->get('/@dmin/buy_sell_destroy/{id}', [buy_and_se
 
 
 Route::name('amazing_features')->get('/@dmin/amazing_features', [amazing_features_sectionController::class, 'index'])->middleware('auth');
+Route::name('edit_amazing_features')->get('/@dmin/edit_amazing_features/{id}', [amazing_features_sectionController::class, 'edit_amazing_features'])->middleware('auth');
+Route::name('update_amazing_features')->post('/@dmin/update_amazing_features', [amazing_features_sectionController::class, 'update_amazing_features'])->middleware('auth');
+
 
 Route::name('additional_services')->get('/@dmin/additional_services', [additiona_service_sectionController::class, 'index'])->middleware('auth');
 
