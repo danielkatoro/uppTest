@@ -25,6 +25,7 @@
                 <div class="body">
                     <form action="{{ route('update_crypto_slide')}}" method="POST" enctype="multipart/form-data">
                         @csrf
+                        <input type="hidden" name="id" value="{{$crypto_slide->id}}">
                         <label for="name">Nom</label>
                         <div class="form-group">
                             <div class="form-line">
@@ -45,10 +46,9 @@
                         </div>
                         <div class="form-group">
                             <label for="file">Logo</label>
-                            <input id="file" type="file" name="file" value="{{$crypto_slide->logo}}"><br>
+                            <input id="file" type="file" name="file"><br>
                         </div>
                         <button type="submit" class="btn btn-info waves-effect">Enregistrer</button>
-
                         <button type="button" class="btn btn-danger waves-effect" data-bs-dismiss="modal">Annuler</button>
                     </form>
                 </div>

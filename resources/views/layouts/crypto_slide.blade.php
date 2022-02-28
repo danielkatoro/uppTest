@@ -114,7 +114,7 @@
                                             <a href="/@dmin/edit_crypto_slide/{{$item->id}}" class="btn btn-tbl-edit">
                                                 <i class="material-icons">create</i>
                                             </a>
-                                            <a href="/crypto_slide_destroy{{$item->id}}" class="btn btn-tbl-delete">
+                                            <a href="/@dmin/crypto_slide_destroy/{{$item->id}}" class="btn btn-tbl-delete">
                                                 <i class="material-icons">delete_forever</i>
                                             </a>
                                         </td>
