@@ -29,7 +29,7 @@ class parteners_logo_sectionController extends Controller
         return 'store slide ok';
     }
 
-    public function parteners_logo_slide($id){
+    public function edit_parteners_logo($id){
         $app_config = App_config::find(2);
         $data = DB::select("SELECT * FROM parteners_logo_sections WHERE id=?",[$id]);
         $parteners_logo = $data[0];

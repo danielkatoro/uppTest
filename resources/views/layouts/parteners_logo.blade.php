@@ -94,10 +94,10 @@
                                             </td>
                                             <td class="center">{{$item->name}}</td>
                                             <td class="center">
-                                                <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                                <a href="/@dmin/edit_parteners_logo/{{$item->id}}" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
                                                 </a>
-                                                <a href="#" class="btn btn-tbl-delete">
+                                                <a href="/@dmin/parteners_logo_destroy/{{$item->id}}" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
                                             </td>
