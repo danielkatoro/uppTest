@@ -83,11 +83,8 @@
                                             <td class="center">{{$item->titre4}}</td>
                                             <td class="center">{{$item->text4}}</td>
                                             <td class="center">
-                                                <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                                <a href="/@dmin/edit_download_section/{{$item->id}}" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
-                                                </a>
-                                                <a href="#" class="btn btn-tbl-delete">
-                                                    <i class="material-icons">delete_forever</i>
                                                 </a>
                                             </td>
                                         </tr>

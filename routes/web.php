@@ -99,6 +99,8 @@ Route::name('update_faq')->post('/@dmin/update_faq', [faq_sectionController::cla
 Route::name('destroy_faq')->get('/@dmin/destroy_faq/{id}', [faq_sectionController::class, 'destroy_faq'])->middleware('auth');
 
 Route::name('download_app')->get('/@dmin/download_app', [download_app_sectionController::class, 'index'])->middleware('auth');
+Route::name('edit_download_section')->get('/@dmin/edit_download_section/{id}', [download_app_sectionController::class, 'edit_download_section'])->middleware('auth');
+Route::name('update_download_app')->post('/@dmin/update_download_app', [download_app_sectionController::class, 'update_download_app'])->middleware('auth');
 
 
 Route::name('crypto_slide')->get('/@dmin/crypto_slide', [crypto_slide_sectionController::class, 'index'])->middleware('auth');
