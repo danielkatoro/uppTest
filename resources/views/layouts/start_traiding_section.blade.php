@@ -40,7 +40,6 @@
                                                 </div>
                                             </div>
                                             <label for="status">Status</label>
-                                            <div class="form-group">
                                                 <div class="">
                                                     <select name="status" id="status">
                                                         <option value="Trending">Traiding</option>
@@ -49,7 +48,6 @@
                                                     </select>
                                                     <input type="text" id="pourcentage" class="form-control" placeholder="16" name="pourcentage">
                                                 </div>
-                                            </div>
                                             <label for="price">Prix</label>
                                             <div class="form-group">
                                                 <div class="form-line">

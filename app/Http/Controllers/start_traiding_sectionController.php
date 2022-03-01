@@ -36,8 +36,8 @@ class start_traiding_sectionController extends Controller
     public function edit_start_traiding($id){
         $app_config = App_config::find(2);
         $data = DB::select("SELECT * FROM start_traiding_sections WHERE id=?",[$id]);
-        $crypto_slide = $data[0];
-        return view('layouts.edit_crypto_slide', compact('crypto_slide','app_config'));
+        $start_training = $data[0];
+        return view('layouts.edit_start_training', compact('start_training','app_config'));
     }
 
     public function update_start_traiding(Request $request){
@@ -49,8 +49,10 @@ class start_traiding_sectionController extends Controller
         DB::table('start_traiding_sections')->where('id', $id)->update([
             'logo' => $imageName,
             'name' => $request->name,
-            'prix' => $request->prix,
-            'pourcentage' => $request->pourcentage
+            'code' => $request->code,
+            'status' => $request->status,
+            'price' => $request->price,
+            'evolution' => $request->evolution
         ]);
 
         return 'update crypto ok';
