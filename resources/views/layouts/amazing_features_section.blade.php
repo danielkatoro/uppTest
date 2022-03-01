@@ -71,20 +71,20 @@
                                     <tbody>
                                         @foreach($amazing_features as $item)
                                         <tr class="odd gradeX">
-                                            <td class="center">{{$item->titre1}}</td>
-                                            <td class="center">{{$item->text1}}</td>
-                                            <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->image1}}" alt="">
+                                            <td class="">{{$item->titre1}}</td>
+                                            <td class="">{{$item->text1}}</td>
+                                            <td >
+                                                <img style="height: 50px;" src="{{asset('images')}}/{{$item->image1}}" alt="">
                                             </td>
-                                            <td class="center">{{$item->titre2}}</td>
-                                            <td class="center">{{$item->text2}}</td>
-                                            <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->image2}}" alt="">
+                                            <td class="">{{$item->titre2}}</td>
+                                            <td class="">{{$item->text2}}</td>
+                                            <td class="">
+                                                <img style="height: 50px;" src="{{asset('images')}}/{{$item->image2}}" alt="">
                                             </td>
-                                            <td class="center">{{$item->titre3}}</td>
-                                            <td class="center">{{$item->text3}}</td>
-                                            <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->image3}}" alt="">
+                                            <td class="">{{$item->titre3}}</td>
+                                            <td class="">{{$item->text3}}</td>
+                                            <td class="">
+                                                <img style="height: 50px;" src="{{asset('images')}}/{{$item->image3}}" alt="">
                                             </td>
                                             <td class="center">
                                                 <a href="/@dmin/edit_amazing_features/{{$item->id}}" class="btn btn-tbl-edit">
