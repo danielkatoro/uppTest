@@ -101,32 +101,31 @@
                                 <table class="table table-hover js-basic-example contact_list">
                                     <thead>
                                         <tr>
-                                            <th class="center">Logo</th>
-                                            <th class="center"> Code </th>
-                                            <th class="center"> Name </th>
-                                            <th class="center"> Nom </th>
-                                            <th class="center"> Status </th>
-                                            <th class="center"> Price </th>
-                                            <th class="center"> Evolution </th>
-                                            <th class="center"> Action </th>
+                                            <th >Logo</th>
+                                            <th > Code </th>
+                                            <th > Nom </th>
+                                            <th > Status </th>
+                                            <th > Price </th>
+                                            <th > Evolution </th>
+                                            <th > Action </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach($start_training as $item)
                                         <tr class="odd gradeX">
-                                            <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->logo}}" alt="">
+                                            <td >
+                                                <img style="height: 50px;" src="{{asset('images')}}/{{$item->logo}}" alt="">
                                             </td>
-                                            <td class="center">{{$item->code}}</td>
-                                            <td class="center">{{$item->name}}</td>
-                                            <td class="center">{{$item->status}}</td>
-                                            <td class="center">{{$item->price}}</td>
-                                            <td class="center">{{$item->evolution}}</td>
-                                            <td class="center">
-                                                <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                            <td >{{$item->code}}</td>
+                                            <td >{{$item->name}}</td>
+                                            <td ">{{$item->status}}</td>
+                                            <td >{{$item->price}}</td>
+                                            <td >{{$item->evolution}}</td>
+                                            <td >
+                                                <a href="/@dmin/edit_start_traiding/{{$item->id}}" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
                                                 </a>
-                                                <a href="#" class="btn btn-tbl-delete">
+                                                <a href="/@dmin/start_traiding_destroy/{{$item->id}}" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
                                             </td>
@@ -136,14 +135,13 @@
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                        <th class="center">Logo</th>
-                                            <th class="center"> Code </th>
-                                            <th class="center"> Name </th>
-                                            <th class="center"> Nom </th>
-                                            <th class="center"> Status </th>
-                                            <th class="center"> Price </th>
-                                            <th class="center"> Evolution </th>
-                                            <th class="center"> Action </th>
+                                            <th >Logo</th>
+                                            <th > Code </th>
+                                            <th > Nom </th>
+                                            <th > Status </th>
+                                            <th > Price </th>
+                                            <th > Evolution </th>
+                                            <th > Action </th>
                                         </tr>
                                     </tfoot>
                                 </table>
