@@ -80,6 +80,11 @@ Route::name('principal_banner')->get('/@dmin/principal_banner', [principal_baner
 Route::name('testimonials_section')->get('/@dmin/testimonials_section', [testimonials_sectionController::class, 'index'])->middleware('auth');
 
 Route::name('start_traiding')->get('/@dmin/start_traiding', [start_traiding_sectionController::class, 'index'])->middleware('auth');
+Route::name('start_traiding_store')->post('start_traiding_store', [start_traiding_sectionController::class, 'start_traiding_store'])->middleware('auth');
+Route::name('edit_start_traiding')->get('/@dmin/edit_start_traiding/{id}', [start_traiding_sectionController::class, 'edit_start_traiding'])->middleware('auth');
+Route::name('update_start_traiding')->post('/@dmin/update_start_traiding', [start_traiding_sectionController::class, 'update_start_traiding'])->middleware('auth');
+Route::name('start_traiding_destroy')->get('/@dmin/start_traiding_destroy/{id}', [start_traiding_sectionController::class, 'start_traiding_destroy'])->middleware('auth');
+
 
 Route::name('parteners_logo')->get('/@dmin/parteners_logo', [parteners_logo_sectionController::class, 'index'])->middleware('auth');
 Route::name('parteners_logo_store')->post('/@dmin/parteners_logo_store', [parteners_logo_sectionController::class, 'parteners_logo_store'])->middleware('auth');
