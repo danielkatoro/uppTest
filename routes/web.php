@@ -123,6 +123,11 @@ Route::name('update_amazing_features')->post('/@dmin/update_amazing_features', [
 
 
 Route::name('additional_services')->get('/@dmin/additional_services', [additiona_service_sectionController::class, 'index'])->middleware('auth');
+Route::name('additional_service_store')->post('additional_service_store', [additiona_service_sectionController::class, 'additional_service_store'])->middleware('auth');
+Route::name('edit_additional_service')->get('/@dmin/edit_additional_service/{id}', [additiona_service_sectionController::class, 'edit_additional_service'])->middleware('auth');
+Route::name('update_additional_service')->post('/@dmin/update_additional_service', [additiona_service_sectionController::class, 'update_additional_service'])->middleware('auth');
+Route::name('additional_service_destroy')->get('/@dmin/additional_service_destroy/{id}', [additiona_service_sectionController::class, 'additional_service_destroy'])->middleware('auth');
+
 
 // update routes
 Route::name('update_principal_banner')->post('update_principal_banner', [principal_baner_sectionController::class, 'Update_principal_banner'])->middleware('auth');

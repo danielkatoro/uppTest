@@ -9,17 +9,53 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <ul class="breadcrumb breadcrumb-style ">
                             <li class="breadcrumb-item">
-                                <h4 class="page-title">All Employees</h4>
+                                <h4 class="page-title">Additional Services</h4>
                             </li>
-                            <li class="breadcrumb-item bcrumb-1">
-                                <a href="../../index.html">
-                                    <i class="fas fa-home"></i> Home</a>
-                            </li>
-                            <li class="breadcrumb-item bcrumb-2">
-                                <a href="#" onClick="return false;">Employee</a>
-                            </li>
-                            <li class="breadcrumb-item active">All Employees</li>
                         </ul>
+                        <!-- #START# Modal Form Example -->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="formModal">Nouveau slide Crypto</h5>
+                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="{{ route('additional_service_store')}}" method="POST" enctype="multipart/form-data">
+                                            @csrf
+                                            <label for="name">Titre</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id="titre" class="form-control" name="titre">
+                                                </div>
+                                            </div>
+                                            <label for="prix">Details</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id="text" class="form-control"  name="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="file">Logo</label>
+                                                <input id="file" type="file" name="file"><br>
+                                            </div>
+                                            <button type="submit" class="btn btn-info waves-effect">Enregistrer</button>
+                                            <button type="button" class="btn btn-danger waves-effect" data-bs-dismiss="modal">Annuler</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END# Modal Form Example -->
+
                     </div>
                 </div>
             </div>
@@ -27,9 +63,6 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="card">
                         <div class="header">
-                            <h2>
-                                <strong>All</strong> Testimonials
-                            </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="#" onClick="return false;" class="dropdown-toggle"
@@ -37,17 +70,6 @@
                                         aria-expanded="false">
                                         <i class="material-icons">more_vert</i>
                                     </a>
-                                    <ul class="dropdown-menu float-end">
-                                        <li>
-                                            <a href="#" onClick="return false;">Action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" onClick="return false;">Another action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" onClick="return false;">Something else here</a>
-                                        </li>
-                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -65,16 +87,16 @@
                                     <tbody>
                                         @foreach($additional_service as $item)
                                         <tr class="odd gradeX">
-                                            <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->image}}" alt="">
+                                            <td class="">
+                                                <img style="height: 50px;" src="{{asset('images')}}/{{$item->image}}" alt="">
                                             </td>
-                                            <td class="center">{{$item->titre}}</td>
-                                            <td class="center">{{$item->text}}</td>
-                                            <td class="center">
-                                                <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                            <td >{{$item->titre}}</td>
+                                            <td >{{$item->text}}</td>
+                                            <td ">
+                                                <a href="/@dmin/edit_additional_service/{{$item->id}}" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
                                                 </a>
-                                                <a href="#" class="btn btn-tbl-delete">
+                                                <a href="/@dmin/additional_service_destroy/{{$item->id}}" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
                                             </td>
