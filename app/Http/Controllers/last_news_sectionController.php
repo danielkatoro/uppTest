@@ -56,7 +56,7 @@ class last_news_sectionController extends Controller
 
 
 
-    public function crypto_last_news($id){
+    public function destroy_last_news($id){
         $deleted = DB::table('crypto_slide_sections')->where('id', '=', $id)->delete();
     }
 }
