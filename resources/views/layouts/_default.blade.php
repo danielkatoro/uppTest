@@ -2,8 +2,6 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.radixtouch.com/templates/admin/atrio/source/lighthr/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jan 2022 12:34:57 GMT -->
-
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -19,16 +17,6 @@
 </head>
 
 <body class="light">
-    <!-- Page Loader -->
-    <!-- <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="m-t-30">
-                <img class="loading-img-spin" src="{{asset('admin/images/loading.png') }}" alt="admin">
-            </div>
-            <p>Please wait...</p>
-        </div>
-    </div> -->
-    <!-- #END# Page Loader -->
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
@@ -39,8 +27,8 @@
                 <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="#" onClick="return false;" class="bars"></a>
                 <a class="navbar-brand" href="index.html">
-                    <img src="{{asset('images') }}/{{$app_config->logoimage}}" alt="" />
-                    <span class="logo-name">{{$app_config->name}}</span>
+                    <img style="height: 30px!important;" src="{{asset('images') }}/{{$app_config->logoimage}}" alt="" />
+                    <!-- <span class="logo-name">{{$app_config->name}}</span> -->
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -58,127 +46,9 @@
                             <i class="fas fa-expand"></i>
                         </a>
                     </li>
-                    <!-- #END# Full Screen Button -->
-                    <!-- #START# Notifications-->
-                    <li class="dropdown">
-                        <a href="#" onClick="return false;" class="dropdown-toggle" data-bs-toggle="dropdown" role="button">
-                            <i class="far fa-bell"></i>
-                            <span class="notify"></span>
-                            <span class="heartbeat"></span>
-                        </a>
-                        <ul class="dropdown-menu pullDown">
-                            <li class="header">NOTIFICATIONS</li>
-                            <li class="body">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="{{asset('admin/images/user/user1.jpg') }}" alt="">
-                                            </span>
-                                            <span class="menu-info">
-                                                <span class="menu-title"></span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 14 mins ago
-                                                </span>
-                                                <span class="menu-desc">Please check your email.</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="assets/images/user/user2.jpg" alt="">
-                                            </span>
-                                            <span class="menu-info">
-                                                <span class="menu-title">Airi Satou</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 22 mins ago
-                                                </span>
-                                                <span class="menu-desc">Please check your email.</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="assets/images/user/user3.jpg" alt="">
-                                            </span>
-                                            <span class="menu-info">
-                                                <span class="menu-title">John Doe</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </span>
-                                                <span class="menu-desc">Please check your email.</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="assets/images/user/user4.jpg" alt="">
-                                            </span>
-                                            <span class="menu-info">
-                                                <span class="menu-title">Ashton Cox</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 2 hours ago
-                                                </span>
-                                                <span class="menu-desc">Please check your email.</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="assets/images/user/user5.jpg" alt="">
-                                            </span>
-                                            <span class="menu-info">
-                                                <span class="menu-title">Cara Stevens</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 4 hours ago
-                                                </span>
-                                                <span class="menu-desc">Please check your email.</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="assets/images/user/user6.jpg" alt="">
-                                            </span>
-                                            <span class="menu-info">
-                                                <span class="menu-title">Charde Marshall</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </span>
-                                                <span class="menu-desc">Please check your email.</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <span class="table-img msg-user">
-                                                <img src="assets/images/user/user7.jpg" alt="">
-                                            </span>
-                                            <span class="menu-info">
-                                                <span class="menu-title">John Doe</span>
-                                                <span class="menu-desc">
-                                                    <i class="material-icons">access_time</i> Yesterday
-                                                </span>
-                                                <span class="menu-desc">Please check your email.</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer">
-                                <a href="#" onClick="return false;">View All Notifications</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- #END# Notifications-->
                     <li class="dropdown user_profile">
                         <div class="dropdown-toggle" data-bs-toggle="dropdown">
-                            <img src="assets/images/user.jpg" alt="user">
+                            <img style="height: 50px;" src="{{asset('admin/images/usrbig.jpg') }}" alt="user">
                         </div>
                         <ul class="dropdown-menu pullDown">
                             <li class="body">
@@ -188,16 +58,7 @@
                                             <i class="material-icons">person</i>Profile
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <i class="material-icons">feedback</i>Feedback
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">
-                                            <i class="material-icons">help</i>Help
-                                        </a>
-                                    </li>
+                                    
                                     <li>
                                         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             <i class="material-icons">power_settings_new</i>Logout
@@ -273,7 +134,7 @@
                             <a href="{{route('get_ready')}}"><i data-feather="calendar"></i> <span>Get ready Section</a>
                         </li> -->
                         <li>
-                            <a href="{{route('faq')}}"><i data-feather="calendar"></i> <span>Frequently Questions Section</a>
+                            <a href="{{route('faq')}}"><i data-feather="calendar"></i> <span>FAQ Section</a>
                         </li>
                         <li>
                             <a href="{{route('testimonials_section')}}"><i data-feather="calendar"></i> <span>Testimoniols Section</a>
@@ -282,7 +143,6 @@
                             <a href="{{route('last_news')}}"><i data-feather="calendar"></i> <span>Last news Section</a>
                         </li>
                     </li>
-                    li>
                         <a href="{{route('app_config')}}">
                             <i data-feather="calendar"></i>
                             <span>Configuration</span>
