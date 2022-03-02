@@ -27,18 +27,19 @@
                                     <div class="modal-body">
                                         <form action="{{ route('crypto_slide_store')}}" method="POST" enctype="multipart/form-data">
                                             @csrf
+                                            <label for="date">Date Publication</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="date" id="date" class="form-control"  name="date">
+                                                </div>
+                                            </div>
                                             <label for="titre">Titre</label>
                                             <div class="form-group">
                                                 <div class="form-line">
                                                     <input type="text" id="titre" class="form-control" name="titre">
                                                 </div>
                                             </div>
-                                            <label for="date">Date</label>
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="date" id="date" class="form-control"  name="date">
-                                                </div>
-                                            </div>
+                                            
                                             <label for="text">Details</label>
                                             <div class="form-group">
                                                 <div class="form-line">
