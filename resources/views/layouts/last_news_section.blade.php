@@ -12,6 +12,56 @@
                                 <h4 class="page-title">Last news</h4>
                             </li>
                         </ul>
+                        <!-- #START# Modal Form Example -->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="formModal">Nouveau slide Crypto</h5>
+                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="{{ route('crypto_slide_store')}}" method="POST" enctype="multipart/form-data">
+                                            @csrf
+                                            <label for="titre">Titre</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id="titre" class="form-control" name="titre">
+                                                </div>
+                                            </div>
+                                            <label for="date">Date</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="date" id="date" class="form-control"  name="date">
+                                                </div>
+                                            </div>
+                                            <label for="text">Details</label>
+                                            <div class="form-group">
+                                                <div class="form-line">
+                                                    <input type="text" id="text" class="form-control" name="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="file">Image</label>
+                                                <input id="file" type="file" name="file"><br>
+                                            </div>
+                                            <button type="submit" class="btn btn-info waves-effect">Enregistrer</button>
+                                            <button type="button" class="btn btn-danger waves-effect" data-bs-dismiss="modal">Annuler</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END# Modal Form Example -->
+
                     </div>
                 </div>
             </div>
