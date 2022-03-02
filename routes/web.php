@@ -99,9 +99,9 @@ Route::name('parteners_logo_destroy')->get('/@dmin/parteners_logo_destroy/{id}',
 
 Route::name('last_news')->get('/@dmin/last_news', [last_news_sectionController::class, 'index'])->middleware('auth');
 Route::name('last_news_store')->post('last_news_store', [last_news_sectionController::class, 'last_news_store'])->middleware('auth');
-Route::name('edit_additional_service')->get('/@dmin/edit_additional_service/{id}', [additiona_service_sectionController::class, 'edit_additional_service'])->middleware('auth');
-Route::name('update_additional_service')->post('/@dmin/update_additional_service', [additiona_service_sectionController::class, 'update_additional_service'])->middleware('auth');
-Route::name('additional_service_destroy')->get('/@dmin/additional_service_destroy/{id}', [additiona_service_sectionController::class, 'additional_service_destroy'])->middleware('auth');
+Route::name('edit_last_news')->get('/@dmin/edit_last_news/{id}', [last_news_sectionController::class, 'edit_last_news'])->middleware('auth');
+Route::name('update_last_news')->post('/@dmin/update_last_news', [last_news_sectionController::class, 'update_last_news'])->middleware('auth');
+Route::name('destroy_last_news')->get('/@dmin/destroy_last_news/{id}', [last_news_sectionController::class, 'destroy_last_news'])->middleware('auth');
 
 
 Route::name('get_ready')->get('/@dmin/get_ready', [get_ready_sectionController::class, 'index'])->middleware('auth');

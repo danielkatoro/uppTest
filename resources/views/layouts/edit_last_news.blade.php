@@ -1,4 +1,4 @@
-@extends('./layouts._default',['title'=>'Edit Crypto-Slide'])
+@extends('./layouts._default',['title'=>'Edit Last-news'])
 
 @section('content')
 
@@ -9,7 +9,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <ul class="breadcrumb breadcrumb-style ">
                         <li class="breadcrumb-item">
-                            <h4 class="page-title">Edit Crypto-Slide</h4>
+                            <h4 class="page-title">Edit Last news</h4>
                         </li>
                     </ul>
                 </div>
@@ -23,7 +23,7 @@
             <div class="card">
 
                 <div class="body">
-                    <form action="{{ route('update_crypto_slide')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('update_last_news')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" name="id" value="{{$crypto_slide->id}}">
                         <label for="name">Nom</label>
