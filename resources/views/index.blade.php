@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from bulkit.cssninja.io/kit17-landing.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 09:17:32 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
@@ -31,7 +28,7 @@
             <div class="container">
                 <!-- Brand -->
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="index.html">
+                    <a class="navbar-item" href="{{route('')}}">
                         <img class="switcher-logo" src="{{ asset('images') }}/{{ $app_config->logoimage}}" alt="">
                     </a>
 
