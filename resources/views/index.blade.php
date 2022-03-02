@@ -142,7 +142,7 @@
                             </div>
                         </div>
                         @endforeach
-                        
+
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                     @endforeach
-                    
+
                 </div>
                 <div class="has-text-centered pt-40 pb-40">
                     <div class="tabs partner-tabs is-centered">
@@ -227,7 +227,7 @@
                         <h3 class="title is-5">{{$item->titre2}}</h3>
                     </div>
                     <p class="side-paragraph is-size-6">
-                    {{$item->text2}}
+                        {{$item->text2}}
                     </p>
                 </div>
 
@@ -236,7 +236,7 @@
                         <h3 class="title is-5">{{$item->titre3}}</h3>
                     </div>
                     <p class="side-paragraph is-size-6">
-                    {{$item->text3}}
+                        {{$item->text3}}
                     </p>
                 </div>
 
@@ -245,7 +245,7 @@
                         <h3 class="title is-5">{{$item->titre4}}</h3>
                     </div>
                     <p class="side-paragraph is-size-6">
-                    {{$item->text4}}
+                        {{$item->text4}}
                     </p>
                 </div>
             </div>
@@ -261,7 +261,7 @@
                 <h2 class="section-title-landing">Amazing Features</h2>
                 <h4>Great tools that will make your life easier</h4>
             </div>
-            
+
             @foreach($amazing_features as $item)
             <div class="content-wrapper">
                 <div class="columns is-vcentered pb-40 pt-40">
@@ -283,7 +283,7 @@
                         <img class="featured-image-large" src="{{asset('images') }}/{{ $item->image1}}" data-base-url="{{asset('images') }}/{{ $item->image1}}" data-extension=".png" alt="" />
                     </div>
                 </div>
-                
+
                 <div class="columns is-vcentered pb-40 pt-40">
                     <!-- This column will display only on mobile -->
                     <div class="column is-4 is-offset-1 is-hidden-tablet is-hidden-desktop">
@@ -379,7 +379,7 @@
                     </a>
                 </div>
                 @endforeach
-                
+
             </div>
         </div>
     </div>
@@ -429,7 +429,7 @@
                             </td>
                         </tr>
                         @endforeach
-                        
+
                     </tbody>
                 </table>
             </div>
@@ -441,7 +441,7 @@
         </div>
     </div>
 
-    
+
     <!--FAQ-->
     <div class="section">
         <div class="container">
@@ -471,7 +471,7 @@
                         </div>
                         @endforeach
                         <!--Faq Block-->
-                        
+
                     </div>
                     <div class="column is-5">
                         <!--Faq Block-->
@@ -485,12 +485,12 @@
                             </div>
                             <div class="block-body">
                                 <p>
-                                {{$item->details}}
+                                    {{$item->details}}
                                 </p>
                             </div>
                         </div>
                         @endforeach
-                        
+
                     </div>
                 </div>
             </div>
@@ -509,13 +509,35 @@
                 <div class="column is-6 is-offset-3">
                     <!-- CSS Carousel -->
                     <div class="css-carousel">
+                        <div class="owl-carousel owl-theme owl-loaded">
+                            @foreach($testimonials as $item)
+                            <input type="radio" name="slides" id="{{$item->name}}" checked data-testimonial-image="{{$item->name}}" />
+                            @endforeach
+                                <!-- Carousel item -->
+                                @foreach($testimonials as $item)
+                                <li class="slide">
+                                    <p>
+                                        <q>{{$item->titre}}</q>
+                                        <span class="text">{{$item->detail}}</span>
+                                        <span class="author">
+                                            <img src="{{asset('images')}}/{{$item->image}}" alt="" data-demo-src="{{asset('images')}}/{{$item->image}}" />
+                                            {{$item->name}}
+                                        </span>
+                                    </p>
+                                @endforeach
+                                <!-- Carousel item -->
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="css-carousel">
                         <i class="fa fa-quote-left"></i>
-                        <!-- Hidden inputs -->
+                        Hidden inputs
                         @foreach($testimonials as $item)
                         <input type="radio" name="slides" id="{{$item->name}}" checked data-testimonial-image="{{$item->name}}" />
                         @endforeach
                         <ul class="slides">
-                            <!-- Carousel item -->
+                            Carousel item
                             @foreach($testimonials as $item)
                             <li class="slide">
                                 <p>
@@ -528,16 +550,16 @@
                                 </p>
                             </li>
                             @endforeach
-                            <!-- Carousel item -->
-                            
+                            Carousel item
+
                         </ul>
-                        <!-- Slider controls -->
+                        Slider controls
                         <div class="carousel-dots">
                             @foreach($testimonials as $item)
                             <label for="radio-1" id="dotForRadio-1"></label>
                             @endforeach
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -596,7 +618,7 @@
                             </div>
                         </div>
                         @endforeach
-                        
+
                     </div>
                 </div>
             </div>
