@@ -78,6 +78,11 @@ Route::name('edit_app_config')->get('/edit_app_config', [App_configController::c
 Route::name('principal_banner')->get('/@dmin/principal_banner', [principal_baner_sectionController::class, 'index'])->middleware('auth');
 
 Route::name('testimonials_section')->get('/@dmin/testimonials_section', [testimonials_sectionController::class, 'index'])->middleware('auth');
+Route::name('testimonials_store')->post('/@dmin/testimonials_store', [testimonials_sectionController::class, 'testimonials_store'])->middleware('auth');
+Route::name('edit_testimonials')->get('/@dmin/edit_testimonials/{id}', [testimonials_sectionController::class, 'edit_testimonials'])->middleware('auth');
+Route::name('update_testimonials')->post('/@dmin/update_testimonials', [testimonials_sectionController::class, 'update_testimonials'])->middleware('auth');
+Route::name('testimonials_destroy')->get('/@dmin/testimonials_destroy/{id}', [testimonials_sectionController::class, 'testimonials_destroy'])->middleware('auth');
+
 
 Route::name('start_traiding')->get('/@dmin/start_traiding', [start_traiding_sectionController::class, 'index'])->middleware('auth');
 Route::name('start_traiding_store')->post('start_traiding_store', [start_traiding_sectionController::class, 'start_traiding_store'])->middleware('auth');
