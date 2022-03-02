@@ -20,28 +20,28 @@
 	<div class="loginmain">
 		<div class="loginCard">
 			<div class="login-btn splits">
-				<p>Already an user?</p>
-				<button class="active">Login</button>
+				<p>Vous avez déjà un compte Admin?</p>
+				<button class="active">Connectez-Vous</button>
 			</div>
 			<div class="rgstr-btn splits">
-				<p>Don't have an account?</p>
-				<button>Register</button>
+				<p>Vous n'avez pas de compte Administrateur?</p>
+				<button>Créer un compte</button>
 			</div>
 			<div class="wrapper">
 				<form  action="{{ route('login') }}" method="POST" id="login" tabindex="500">
                     @csrf
-					<h3>Login</h3>
+					<h3>Espace Administrateur || Login</h3>
 					<div class="mail">
-						<input type="email" name="email" value="{{ old('email') }}">
-						<label>Mail or Username</label>
+						<input type="email" name="email" value="{{ old('email') }}" required>
+						<label>Mail ou Username</label>
 					</div>
 					<div class="passwd">
-						<input type="password" name="password">
-						<label>Password</label>
+						<input type="password" name="password" required>
+						<label>Mot de passe</label>
 					</div>
 					<div class="text-end p-t-8 p-b-31">
 						<a href="#">
-							Forgot password?
+							Mot de passe oublié?
 						</a>
 					</div>
 					<div class="submit">
@@ -59,22 +59,23 @@
 						</a>
 					</div>
 				</form>
-				<form id="register" tabindex="502">
-					<h3>Register</h3>
+				<form method="POST" action="{{route('register')}}" id="register" tabindex="502">
+					@csrf
+					<h3>Espace Administrateur || Register</h3>
 					<div class="name">
-						<input type="text">
-						<label>Full Name</label>
-					</div>
-					<div class="mail">
-						<input type="email">
-						<label>Mail</label>
+						<input type="password" autocomplete="off">
+						<label>Mot clé Admin</label>
 					</div>
 					<div class="uid">
-						<input type="text">
+						<input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 						<label>User Name</label>
 					</div>
+					<div class="mail">
+						<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+						<label>Mail</label>
+					</div>
 					<div class="passwd">
-						<input type="password">
+						<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 						<label>Password</label>
 					</div>
 					<div class="submit">
