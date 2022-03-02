@@ -270,9 +270,6 @@
                             <a href="{{route('start_traiding')}}"><i data-feather="calendar"></i> <span>Start tranding Section</a>
                         </li>
                         <li>
-                            <a href="{{route('get_ready')}}"><i data-feather="calendar"></i> <span>Get ready Section</a>
-                        </li>
-                        <li>
                             <a href="{{route('faq')}}"><i data-feather="calendar"></i> <span>Frequently Questions Section</a>
                         </li>
                         <li>
