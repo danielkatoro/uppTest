@@ -33,9 +33,9 @@ class last_news_sectionController extends Controller
 
     public function edit_last_news($id){
         $app_config = App_config::find(2);
-        $data = DB::select("SELECT * FROM crypto_slide_sections WHERE id=?",[$id]);
-        $crypto_slide = $data[0];
-        return view('layouts.edit_crypto_slide', compact('crypto_slide','app_config'));
+        $data = DB::select("SELECT * FROM last_news_sections WHERE id=?",[$id]);
+        $last_news = $data[0];
+        return view('layouts.edit_last_news', compact('last_news','app_config'));
     }
 
     public function update_last_news(Request $request){

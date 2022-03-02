@@ -95,17 +95,17 @@
                                     <tbody>
                                         @foreach($last_news as $item)
                                         <tr class="odd gradeX">
-                                            <td class="table-img center">
-                                                <img src="{{asset('images')}}/{{$item->image}}" alt="">
+                                            <td class="">
+                                                <img style="height: 50px;" src="{{asset('images')}}/{{$item->image}}" alt="">
                                             </td>
-                                            <td class="center">{{$item->titre}}</td>
-                                            <td class="center">{{$item->text}}</td>
-                                            <td class="center">{{$item->date}}</td>
-                                            <td class="center">
-                                                <a href="edit-employee.html" class="btn btn-tbl-edit">
+                                            <td class="">{{$item->titre}}</td>
+                                            <td class="">{{$item->text}}</td>
+                                            <td class="">{{$item->date}}</td>
+                                            <td class="">
+                                                <a href="/@dmin/edit_last_news/{{$item->id}}" class="btn btn-tbl-edit">
                                                     <i class="material-icons">create</i>
                                                 </a>
-                                                <a href="#" class="btn btn-tbl-delete">
+                                                <a href="/@dmin/destroy_last_news/{{$item->id}}" class="btn btn-tbl-delete">
                                                     <i class="material-icons">delete_forever</i>
                                                 </a>
                                             </td>
