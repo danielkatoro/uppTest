@@ -8,7 +8,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>Admin || Login</title>
 	<!-- Favicon-->
-	<link rel="icon" href="{{ asset('admin/images/favicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ asset('images') }}//{{$app_config->image}}" type="image/x-icon">
 	<!-- Plugins Core Css -->
 	<link href="{{ asset('admin//css/app.min.css') }}" rel="stylesheet">
 	<!-- Custom Css -->
