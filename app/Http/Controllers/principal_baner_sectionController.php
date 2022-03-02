@@ -29,7 +29,7 @@ class principal_baner_sectionController extends Controller
             'image' => $imageName
         ]);
 
-        return 'updateting okey';
+        return redirect()->route('principal_banner')->with('message','Modification effectuée');
     }
 
 }
