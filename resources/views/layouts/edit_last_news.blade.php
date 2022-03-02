@@ -25,27 +25,28 @@
                 <div class="body">
                     <form action="{{ route('update_last_news')}}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <input type="hidden" name="id" value="{{$crypto_slide->id}}">
-                        <label for="name">Nom</label>
+                        <input type="hidden" name="id" value="{{$last_news->id}}">
+                        <label for="date">Date Publication</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" id="name" class="form-control" value="{{$crypto_slide->name}}" name="name">
+                                <input type="date" id="date" class="form-control" value="{{$last_news->date}}" name="date">
                             </div>
                         </div>
-                        <label for="prix">Prix</label>
+                        <label for="titre">Titre</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" id="prix" class="form-control" value="{{$crypto_slide->prix}}" name="prix">
+                                <input type="text" id="titre" class="form-control" value="{{$last_news->titre}}" name="titre">
                             </div>
                         </div>
-                        <label for="pourcentage">Pourcentage d'evolution</label>
+
+                        <label for="text">Details</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" id="pourcentage" class="form-control" value="{{$crypto_slide->pourcentage}}" name="pourcentage">
+                                <input type="text" id="text" class="form-control" value="{{$last_news->text}}" name="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="file">Logo</label>
+                            <label for="file">Image</label>
                             <input id="file" type="file" name="file"><br>
                         </div>
                         <button type="submit" class="btn btn-info waves-effect">Enregistrer</button>

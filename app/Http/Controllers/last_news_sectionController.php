@@ -44,11 +44,11 @@ class last_news_sectionController extends Controller
         $imageName = time().'.'.$logoimage->extension();
         $logoimage->move(public_path('images'),$imageName);
         $id = $request->id;
-        DB::table('crypto_slide_sections')->where('id', $id)->update([
-            'logo' => $imageName,
-            'name' => $request->name,
-            'prix' => $request->prix,
-            'pourcentage' => $request->pourcentage
+        DB::table('last_news_sections')->where('id', $id)->update([
+            'image' => $imageName,
+            'titre' => $request->titre,
+            'text' => $request->text,
+            'date' => $request->date
         ]);
 
         return 'update crypto ok';
