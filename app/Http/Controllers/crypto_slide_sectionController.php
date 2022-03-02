@@ -28,7 +28,7 @@ class crypto_slide_sectionController extends Controller
             'pourcentage' => $request->pourcentage
         ]);
 
-        return 'store slide ok';
+        return redirect()->route('crypto_slide')->with('messageStore','Enregistrement effectué');
     }
 
     public function edit_crypto_slide($id){
@@ -51,12 +51,13 @@ class crypto_slide_sectionController extends Controller
             'pourcentage' => $request->pourcentage
         ]);
 
-        return 'update crypto ok';
+        return redirect()->route('crypto_slide')->with('messageUpdate','Modification effectuée');
     }
 
 
 
     public function crypto_slide_destroy($id){
         $deleted = DB::table('crypto_slide_sections')->where('id', '=', $id)->delete();
+        return redirect()->route('crypto_slide')->with('messageDelete','Suppression effectuée');
     }
 }

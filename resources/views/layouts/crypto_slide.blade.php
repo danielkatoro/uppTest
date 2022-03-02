@@ -69,27 +69,23 @@
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="card">
                     <div class="header">
-
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown">
-                                <a href="#" onClick="return false;" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">more_vert</i>
-                                </a>
-                                <ul class="dropdown-menu float-end">
-                                    <li>
-                                        <a href="#" onClick="return false;">Action</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">Another action</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" onClick="return false;">Something else here</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
                     </div>
                     <div class="body">
+                    @if(Session::has('messageDelete'))
+                        <div class="container col-6 alert alert-success text-center">
+                            <h5>Suppression éffecectuées</h5>
+                        </div>
+                        @endif
+                    @if(Session::has('messageStore'))
+                        <div class="container col-6 alert alert-success text-center">
+                            <h5>Enregistrement éffecectué</h5>
+                        </div>
+                        @endif
+                    @if(Session::has('messageUpdate'))
+                        <div class="container col-6 alert alert-success text-center">
+                            <h5>Modifications éffecectuées</h5>
+                        </div>
+                        @endif
                         <div class="table-responsive">
                             <table class="table table-hover js-basic-example contact_list">
                                 <thead>
