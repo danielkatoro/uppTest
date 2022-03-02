@@ -25,7 +25,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="{{ route('crypto_slide_store')}}" method="POST" enctype="multipart/form-data">
+                                        <form action="{{ route('last_news_store')}}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <label for="date">Date Publication</label>
                                             <div class="form-group">
