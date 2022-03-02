@@ -581,20 +581,17 @@
                         <div class="main-post">
                             <!-- Featured image -->
                             <div class="post-image">
-                                <img src="https://via.placeholder.com/1600x900" alt="" data-demo-src="../images.pexels.com/photos/844124/pexels-photo-8441241751.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" />
+                                <img src="{{asset('images')}}/{{$last_news1->image}}" alt="" data-demo-src="{{asset('images')}}/{{$last_news1->image}}" />
                                 <div class="image-overlay"></div>
                             </div>
                             <!-- Featured Content -->
                             <div class="post-content">
                                 <h3>
-                                    <a href="#">How to invest in Blockchain efficiently in 2021?</a>
+                                    <a href="#">{{$last_news1->titre}}</a>
                                 </h3>
-                                <span class="time">April 11 2021</span>
+                                <span class="time">{{$last_news1->date}}</span>
                                 <p>
-                                    Homines enim eruditos et sobrios ut infaustos et inutiles
-                                    vitant, eo quoque accedente quod et nomenclatores adsueti haec
-                                    et talia venditare, mercede accepta lucris quosdam et prandiis
-                                    inserunt subditicios ignobiles et obscuros.
+                                {{$last_news1->text}}
                                 </p>
                                 <!-- Read more -->
                                 <a class="read-more" href="#">Continue reading <i class="im im-icon-Right"></i></a>

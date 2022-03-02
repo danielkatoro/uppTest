@@ -58,8 +58,10 @@ Route::name('index')->get('/', function () {
     $faq2 = DB::select("SELECT * FROM faq_sections LIMIT 5");
     $testimonials = testimonials_section::all();
     $last_news = last_news_section::all();
+    $data = DB::select("SELECT * FROM last_news_sections LIMIT 1");
+    $last_news1 = $data[0];
 
-    return view('index',compact('app_config','principal_banner','crypto_slide','buy_and_sell','parteners_logo','download_app','amazing_features','additional_service','start_training','faq1','faq2','testimonials','last_news'));
+    return view('index',compact('app_config','principal_banner','crypto_slide','buy_and_sell','parteners_logo','download_app','amazing_features','additional_service','start_training','faq1','faq2','testimonials','last_news','last_news1'));
 });
 
 Route::name('home')->get('/@dmin', function () {
