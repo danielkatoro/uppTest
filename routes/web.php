@@ -70,12 +70,11 @@ Route::name('home')->get('/@dmin', function () {
 })->middleware('auth');
 
 Route::name('app_config')->get('/@dmin/app_config', [App_configController::class, 'index'])->middleware('auth');
-
 Route::name('Save_app_config')->post('Save_app_config', [App_configController::class, 'UpdateApp_config'])->middleware('auth');
-
 Route::name('edit_app_config')->get('/edit_app_config', [App_configController::class, 'index'])->middleware('auth');
 
 Route::name('principal_banner')->get('/@dmin/principal_banner', [principal_baner_sectionController::class, 'index'])->middleware('auth');
+Route::name('update_principal_banner')->post('update_principal_banner', [principal_baner_sectionController::class, 'Update_principal_banner'])->middleware('auth');
 
 Route::name('testimonials_section')->get('/@dmin/testimonials_section', [testimonials_sectionController::class, 'index'])->middleware('auth');
 Route::name('testimonials_store')->post('/@dmin/testimonials_store', [testimonials_sectionController::class, 'testimonials_store'])->middleware('auth');
@@ -137,9 +136,5 @@ Route::name('additional_service_store')->post('additional_service_store', [addit
 Route::name('edit_additional_service')->get('/@dmin/edit_additional_service/{id}', [additiona_service_sectionController::class, 'edit_additional_service'])->middleware('auth');
 Route::name('update_additional_service')->post('/@dmin/update_additional_service', [additiona_service_sectionController::class, 'update_additional_service'])->middleware('auth');
 Route::name('additional_service_destroy')->get('/@dmin/additional_service_destroy/{id}', [additiona_service_sectionController::class, 'additional_service_destroy'])->middleware('auth');
-
-
-// update routes
-Route::name('update_principal_banner')->post('update_principal_banner', [principal_baner_sectionController::class, 'Update_principal_banner'])->middleware('auth');
 
 
