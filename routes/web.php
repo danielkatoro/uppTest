@@ -42,7 +42,7 @@ use Illuminate\Support\Facades\DB;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
+Route::name('index')->get('/', function () {
     $id = 2;
     $app_config = App_config::find($id);
     $id1=1;

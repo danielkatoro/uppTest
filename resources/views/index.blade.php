@@ -28,7 +28,7 @@
             <div class="container">
                 <!-- Brand -->
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="{{route('')}}">
+                    <a class="navbar-item" href="{{route('index')}}">
                         <img class="switcher-logo" src="{{ asset('images') }}/{{ $app_config->logoimage}}" alt="">
                     </a>
 
